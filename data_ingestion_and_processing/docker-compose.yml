@@ -1,0 +1,64 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: research
+      POSTGRES_PASSWORD: research
+      POSTGRES_DB: sec_units
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U research"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  airflow:
+    image: apache/airflow:2.9.3
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # --- Core ----------------------------------------------------------
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://research:research@postgres/sec_units
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+
+      # --- Python deps not bundled in apache/airflow:2.9.3 ----------------
+      # Installed once on container start (~60 s on first run).
+      _PIP_ADDITIONAL_REQUIREMENTS: >-
+        beautifulsoup4 lxml pyarrow pydantic requests pandas
+
+      # Make /opt/airflow/pipeline.py importable from dags/airflow_dag.py
+      PYTHONPATH: "/opt/airflow"
+
+      # Default timezone (adjust if needed)
+      TZ: "UTC"
+
+    volumes:
+      # DAG definitions
+      - ./dags:/opt/airflow/dags
+      # pipeline.py + schema live at /opt/airflow so `from pipeline import ...` resolves
+      - ./pipeline.py:/opt/airflow/pipeline.py:ro
+      - ./schema_and_validation.py:/opt/airflow/schema_and_validation.py:ro
+      # Output directory shared with the host
+      - ./data:/opt/airflow/data
+      # Airflow's own logs (viewable from host)
+      - ./airflow_logs:/opt/airflow/logs
+
+    ports:
+      - "8080:8080"
+
+    # `airflow standalone` = webserver + scheduler + triggerer in one
+    # process. It auto-creates the admin user and prints the password
+    # to stdout on first start — check `docker-compose logs airflow`.
+    command: bash -c "airflow db migrate && airflow standalone"
+
+volumes:
+  pgdata:
