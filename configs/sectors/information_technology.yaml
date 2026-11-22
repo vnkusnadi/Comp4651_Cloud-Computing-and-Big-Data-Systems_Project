@@ -1,0 +1,920 @@
+# =============================================================================
+# information_technology.yaml — GICS 45 IT sector concept schema, v0.1
+# Owner: Person B (sector schema, mapping, and alignment validation)
+#
+# Course spec (Stage 0) contract:
+#   * 15–25 concepts per sector; REQUIRED concepts: R&D_expense, Revenue_total,
+#     Revenue_segment, GrossProfit, Capex, SupplyChainConcentrationRisk
+#   * every concept: canonical name, aliases, XBRL tags, unit type,
+#     period type, sector applicability
+#
+# `metric` is the exact name used in Person A's evidence_units, so Stage 4
+# can join units to concepts by name without translation.
+# =============================================================================
+
+schema_version: 0.1
+
+sector:
+  name: Information Technology
+  gics_code: 45
+  companies: [AAPL, MSFT, NVDA, AVGO, CSCO]
+  fiscal_years: [2025]
+  tolerance: 0.02                       # 2 % calculation tolerance (project spec)
+
+# -----------------------------------------------------------------------------
+# Tier 1 — base concepts: raw numbers read straight from the report.
+# (24 terms — matches the group dictionary in Group16.pdf p.7)
+# -----------------------------------------------------------------------------
+base_concepts:
+  # --- Growth & scale -------------------------------------------------------
+  - canonical_name: Revenue_total
+    metric: Revenue_total
+    spec_required: true
+    description: Consolidated total revenue of the whole company.
+    aliases:
+      - Total net sales        # AAPL
+      - Total revenue          # MSFT, NVDA
+      - Net revenue            # AVGO
+      - Net sales
+      - Revenues
+    xbrl_tags:
+      - RevenueFromContractWithCustomerExcludingAssessedTax
+      - Revenues
+      - RevenueFromContractWithCustomerIncludingAssessedTax
+      - SalesRevenueNet
+      - Revenue                # IFRS fallback
+    unit_type: USD
+    period_type: duration
+    dimensions: none            # must be whole-company; segment dimension => reject
+    categories: [Scale]
+    validation:
+      consolidated_only: true
+      reconciliation: segment_sum_to_total      # product + service ≈ total
+
+  - canonical_name: Revenue_product
+    metric: Revenue_product
+    spec_required: false
+    required_group: Revenue_segment             # instantiates the REQUIRED Revenue_segment
+    description: Product sales (segment view — NOT a company total).
+    aliases: [Products, Product]
+    xbrl_tags:
+      - RevenueFromContractWithCustomerExcludingAssessedTax
+    unit_type: USD
+    period_type: duration
+    dimensions: ProductOrServiceAxis           # dimension REQUIRED for this concept
+    categories: [Scale]
+    validation:
+      consolidated_only: false
+      segment_of: Revenue_total
+
+  - canonical_name: Revenue_service
+    metric: Revenue_service
+    spec_required: false
+    required_group: Revenue_segment             # instantiates the REQUIRED Revenue_segment
+    description: Service sales (segment view — NOT a company total).
+    aliases: [Services, Service and other, Subscriptions and services]   # 3rd = AVGO
+    xbrl_tags:
+      - RevenueFromContractWithCustomerExcludingAssessedTax
+    unit_type: USD
+    period_type: duration
+    dimensions: ProductOrServiceAxis           # dimension REQUIRED for this concept
+    categories: [Scale]
+    validation:
+      consolidated_only: false
+      segment_of: Revenue_total
+
+  - canonical_name: CostOfRevenue
+    metric: CostOfRevenue
+    description: Cost of goods/services sold.
+    aliases: [Cost of sales, Cost of revenue, Cost of goods sold, Total cost of sales]
+    xbrl_tags: [CostOfGoodsAndServicesSold, CostOfRevenue, CostOfGoodsSold]
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: []
+    validation:
+      consolidated_only: true
+
+  - canonical_name: GrossProfit
+    metric: GrossProfit
+    spec_required: true
+    description: Revenue minus cost of revenue.
+    aliases: [Gross profit, Gross margin]
+    xbrl_tags: [GrossProfit]
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Scale, Profitability]
+    validation:
+      consolidated_only: true
+      identity: revenue_minus_cost_of_revenue
+
+  - canonical_name: OperatingIncomeLoss
+    metric: OperatingIncomeLoss
+    description: Operating income (loss).
+    aliases: [Operating income, Income from operations]
+    xbrl_tags: [OperatingIncomeLoss]
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Scale, Profitability]
+    validation:
+      consolidated_only: true
+      identity: gross_profit_minus_operating_expenses
+
+  - canonical_name: NetIncomeLoss
+    metric: NetIncomeLoss
+    description: Net income (loss) after all expenses and tax.
+    aliases: [Net income, Net earnings, ProfitLoss]
+    xbrl_tags: [NetIncomeLoss, ProfitLoss]      # ProfitLoss = IFRS
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Scale, Profitability]
+    validation:
+      consolidated_only: true
+
+  - canonical_name: EarningsPerShareDiluted
+    metric: EarningsPerShareDiluted
+    description: Diluted earnings per share.
+    aliases: [Diluted EPS, EPS diluted]
+    xbrl_tags:
+      - EarningsPerShareDiluted
+      - IncomeLossFromContinuingOperationsPerDilutedShare
+    unit_type: USD_per_share
+    period_type: duration
+    dimensions: none
+    categories: [Scale, Profitability]
+    validation:
+      consolidated_only: true
+      identity: net_income_over_diluted_shares
+
+  - canonical_name: EarningsPerShareBasic
+    metric: EarningsPerShareBasic
+    description: Basic earnings per share.
+    aliases: [Basic EPS, EPS basic]
+    xbrl_tags:
+      - EarningsPerShareBasic
+      - IncomeLossFromContinuingOperationsPerBasicShare
+    unit_type: USD_per_share
+    period_type: duration
+    dimensions: none
+    categories: [Profitability]
+    validation:
+      consolidated_only: true
+      identity: net_income_over_basic_shares
+
+  - canonical_name: WeightedAverageNumberOfDilutedSharesOutstanding
+    metric: WeightedAverageNumberOfDilutedSharesOutstanding
+    description: Weighted-average diluted shares outstanding.
+    aliases: [Diluted shares]
+    xbrl_tags: [WeightedAverageNumberOfDilutedSharesOutstanding]
+    unit_type: shares
+    period_type: duration
+    dimensions: none
+    categories: []
+    validation: {consolidated_only: true}
+
+  - canonical_name: WeightedAverageNumberOfSharesOutstandingBasic
+    metric: WeightedAverageNumberOfSharesOutstandingBasic
+    description: Weighted-average basic shares outstanding.
+    aliases: [Basic shares]
+    xbrl_tags: [WeightedAverageNumberOfSharesOutstandingBasic]
+    unit_type: shares
+    period_type: duration
+    dimensions: none
+    categories: []
+    validation: {consolidated_only: true}
+
+  - canonical_name: DeferredRevenue
+    metric: ContractWithCustomerLiabilityCurrent
+    description: Deferred revenue (current contract liability).
+    aliases: [Deferred revenue, Contract liabilities]
+    xbrl_tags: [ContractWithCustomerLiabilityCurrent, DeferredRevenueCurrent]
+    unit_type: USD
+    period_type: instant
+    dimensions: none
+    categories: [Scale]
+    validation: {consolidated_only: true}
+
+  - canonical_name: AccountsReceivable
+    metric: AccountsReceivableNetCurrent
+    description: Net accounts receivable (current).
+    aliases: [Accounts receivable, Trade receivables]
+    xbrl_tags:
+      - AccountsReceivableNetCurrent
+      - AccountsNotesAndLoansReceivableNetCurrent
+      - TradeAndOtherReceivablesCurrent      # IFRS
+    unit_type: USD
+    period_type: instant
+    dimensions: none
+    categories: [Scale]
+    validation: {consolidated_only: true}
+
+  - canonical_name: Inventory
+    metric: InventoryNet
+    description: Net inventory.
+    aliases: [Inventories, Inventory]
+    xbrl_tags: [InventoryNet, InventoriesNetOfWriteDown]     # 2nd = IFRS
+    unit_type: USD
+    period_type: instant
+    dimensions: none
+    categories: [Scale]
+    validation: {consolidated_only: true}
+
+  - canonical_name: Assets
+    metric: Assets
+    description: Total assets.
+    aliases: [Total assets]
+    xbrl_tags: [Assets]
+    unit_type: USD
+    period_type: instant
+    dimensions: none
+    categories: [Scale]
+    validation: {consolidated_only: true}
+
+  - canonical_name: StockholdersEquity
+    metric: StockholdersEquity
+    description: Total stockholders' equity.
+    aliases: [Equity, Shareholders equity, Total equity]
+    xbrl_tags: [StockholdersEquity, Equity]                  # Equity = IFRS
+    unit_type: USD
+    period_type: instant
+    dimensions: none
+    categories: []
+    validation: {consolidated_only: true}
+
+  # --- Operating efficiency (expense items) --------------------------------
+  - canonical_name: R&D_expense
+    metric: ResearchAndDevelopmentExpense
+    spec_required: true
+    description: Research and development expense.
+    aliases: [Research and development, R&D, Research and development expense]
+    xbrl_tags: [ResearchAndDevelopmentExpense]
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Operating efficiency]      # ingredient for R&D_expense_to_revenue
+    validation:
+      consolidated_only: true
+      not_footnote_only: true               # spec: never footnote-only unless labelled
+      income_statement_consistency: true    # must fit OpEx identity (R&D + S&M + G&A ≈ OpEx)
+
+  - canonical_name: SellingAndMarketingExpense
+    metric: SellingAndMarketingExpense
+    description: Selling and marketing expense.
+    aliases: [Selling and marketing, Marketing expense, SG&A]
+    xbrl_tags:
+      - SellingAndMarketingExpense
+      - MarketingExpense
+      - SellingGeneralAndAdministrativeExpense      # when split unavailable
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Operating efficiency]
+    validation: {consolidated_only: true}
+
+  - canonical_name: GeneralAndAdministrativeExpense
+    metric: GeneralAndAdministrativeExpense
+    description: General and administrative expense.
+    aliases: [General and administrative, G&A]
+    xbrl_tags: [GeneralAndAdministrativeExpense]
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Operating efficiency]
+    validation: {consolidated_only: true}
+
+  - canonical_name: OperatingExpenses
+    metric: OperatingExpenses
+    description: Total operating expenses (SGA + R&D).
+    aliases: [Total operating expenses, Costs and expenses]
+    xbrl_tags: [OperatingExpenses, CostsAndExpenses]
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Operating efficiency]
+    validation: {consolidated_only: true}
+
+  - canonical_name: Capex
+    metric: PaymentsToAcquirePropertyPlantAndEquipment
+    spec_required: true
+    description: Capital expenditure — cash paid for property, plant and equipment.
+    aliases: [Capital expenditure, Purchase of property plant and equipment]
+    xbrl_tags:
+      - PaymentsToAcquirePropertyPlantAndEquipment
+      - PurchaseOfPropertyPlantAndEquipment      # IFRS
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Operating efficiency]      # ingredient for Capex_to_revenue
+    validation: {consolidated_only: true}
+
+  - canonical_name: OperatingCashFlow
+    metric: NetCashProvidedByUsedInOperatingActivities
+    description: Net cash provided by operating activities.
+    aliases: [Operating cash flow, Cash flows from operating activities]
+    xbrl_tags:
+      - NetCashProvidedByUsedInOperatingActivities
+      - CashFlowsFromUsedInOperatingActivities       # IFRS
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: [Operating efficiency]
+    validation: {consolidated_only: true}
+
+  - canonical_name: DepreciationAndAmortization
+    metric: DepreciationDepletionAndAmortization
+    description: Depreciation, depletion and amortization.
+    aliases: [Depreciation and amortization, D&A, Depreciation amortization and other]
+    xbrl_tags:
+      - DepreciationDepletionAndAmortization
+      - DepreciationAndAmortisationExpense
+      - "msft:DepreciationAmortizationAndOther"   # MSFT company extension tag (FY2025 10-K)
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: []
+    validation: {consolidated_only: true}
+
+  - canonical_name: ShareBasedCompensation
+    metric: ShareBasedCompensation
+    description: Share-based compensation expense.
+    aliases: [Stock-based compensation, SBC]
+    xbrl_tags: [ShareBasedCompensation]
+    unit_type: USD
+    period_type: duration
+    dimensions: none
+    categories: []
+    validation: {consolidated_only: true}
+
+# -----------------------------------------------------------------------------
+# Risk concepts (course spec Layer 3, "risk categories" family).
+# These are narrative concepts: no XBRL tags; mapped from paragraph/footnote
+# units by normalized label or embedding candidates.
+# TODO(team): Person A's v1 dataset has no paragraph units yet — this concept
+# is declared now (spec-required) and becomes joinable once Stage 3 emits them.
+# -----------------------------------------------------------------------------
+risk_concepts:
+  - canonical_name: SupplyChainConcentrationRisk
+    spec_required: true
+    family: risk
+    description: >-
+      Disclosure of concentration risk in the supply chain (key suppliers,
+      sole-sourcing, geopolitical exposure of manufacturing).
+    aliases:
+      - Supply chain concentration
+      - Supplier concentration
+      - Concentrated supply chain
+      - Reliance on third-party manufacturers
+    xbrl_tags: []
+    unit_type: narrative
+    period_type: point_in_time
+    dimensions: none
+    categories: []
+    source_unit_types: [paragraph, footnote]
+    mapping_methods: [normalized_label, embedding_candidate]
+    validation: {consolidated_only: false}
+
+# -----------------------------------------------------------------------------
+# Tier 2 — derived metrics: formula-backed ratios (never computed by the LLM).
+# `metric` joins to Person A's `calculation` units.
+# -----------------------------------------------------------------------------
+derived_metrics:
+  - canonical_name: GrossMargin
+    metric: GrossMargin
+    formula_id: f_gross_margin
+    formula: GrossProfit / Revenue_total
+    numerator: GrossProfit
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Profitability]
+  - canonical_name: OperatingMargin
+    metric: OperatingMargin
+    formula_id: f_operating_margin
+    formula: OperatingIncomeLoss / Revenue_total
+    numerator: OperatingIncomeLoss
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Profitability]
+  - canonical_name: NetMargin
+    metric: NetMargin
+    formula_id: f_net_margin
+    formula: NetIncomeLoss / Revenue_total
+    numerator: NetIncomeLoss
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Profitability]
+  - canonical_name: ReturnOnAssets
+    metric: ReturnOnAssets
+    formula_id: f_roa
+    formula: NetIncomeLoss / Assets
+    numerator: NetIncomeLoss
+    denominator: Assets
+    unit_type: ratio
+    categories: [Profitability]
+  - canonical_name: ReturnOnEquity
+    metric: ReturnOnEquity
+    formula_id: f_roe
+    formula: NetIncomeLoss / StockholdersEquity
+    numerator: NetIncomeLoss
+    denominator: StockholdersEquity
+    unit_type: ratio
+    categories: [Profitability]
+  - canonical_name: EBITDA
+    metric: EBITDA
+    formula_id: f_ebitda
+    formula: OperatingIncomeLoss + DepreciationAndAmortization
+    numerator: OperatingIncomeLoss
+    denominator: DepreciationAndAmortization
+    unit_type: USD
+    categories: [Profitability]
+  - canonical_name: EBITDA_margin
+    metric: EBITDA_margin
+    formula_id: f_ebitda_margin
+    formula: EBITDA / Revenue_total
+    numerator: EBITDA
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Profitability]
+  - canonical_name: R&D_expense_to_revenue
+    metric: R&D_expense_to_revenue
+    formula_id: f_rnd_intensity
+    formula: R&D_expense / Revenue_total
+    numerator: R&D_expense
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Operating efficiency]
+  - canonical_name: SalesAndMarketing_to_revenue
+    metric: SalesAndMarketing_to_revenue
+    formula_id: f_sm_to_rev
+    formula: SellingAndMarketingExpense / Revenue_total
+    numerator: SellingAndMarketingExpense
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Operating efficiency]
+  - canonical_name: G&A_to_revenue
+    metric: G&A_to_revenue
+    formula_id: f_ga_to_rev
+    formula: GeneralAndAdministrativeExpense / Revenue_total
+    numerator: GeneralAndAdministrativeExpense
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Operating efficiency]
+  - canonical_name: TotalOperatingExpense_to_revenue
+    metric: TotalOperatingExpense_to_revenue
+    formula_id: f_opex_to_rev
+    formula: OperatingExpenses / Revenue_total
+    numerator: OperatingExpenses
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Operating efficiency]
+  - canonical_name: AssetTurnover
+    metric: AssetTurnover
+    formula_id: f_asset_turnover
+    formula: Revenue_total / Assets
+    numerator: Revenue_total
+    denominator: Assets
+    unit_type: ratio
+    categories: [Operating efficiency]
+  - canonical_name: Product_mix
+    metric: Product_mix
+    formula_id: f_product_mix
+    formula: Revenue_product / Revenue_total
+    numerator: Revenue_product
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Scale]
+  - canonical_name: Service_mix
+    metric: Service_mix
+    formula_id: f_service_mix
+    formula: Revenue_service / Revenue_total
+    numerator: Revenue_service
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Scale]
+  - canonical_name: Capex_to_revenue
+    metric: Capex_to_revenue
+    formula_id: f_capex_to_rev
+    formula: Capex / Revenue_total
+    numerator: Capex
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Operating efficiency]
+  - canonical_name: OperatingCashFlow_to_revenue
+    metric: OperatingCashFlow_to_revenue
+    formula_id: f_ocf_to_rev
+    formula: OperatingCashFlow / Revenue_total
+    numerator: OperatingCashFlow
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Operating efficiency]
+  - canonical_name: FreeCashFlowMargin
+    metric: FreeCashFlowMargin
+    formula_id: f_fcf_margin
+    formula: (OperatingCashFlow - abs(Capex)) / Revenue_total
+    numerator: OperatingCashFlow
+    denominator: Revenue_total
+    unit_type: ratio
+    categories: [Operating efficiency]
+
+# -----------------------------------------------------------------------------
+# Tier 3 — category bundles (the only user-facing entry point, refined plan §2.2)
+# Member counts match Group16.pdf p.3: Scale 13, Profitability 12, Efficiency 8.
+# -----------------------------------------------------------------------------
+categories:
+  - name: Scale
+    direction: higher_is_larger
+    default_weight: equal
+    min_coverage: 0.7
+    members:
+      - Revenue_total
+      - Revenue_product
+      - Revenue_service
+      - Product_mix
+      - Service_mix
+      - GrossProfit
+      - OperatingIncomeLoss
+      - NetIncomeLoss
+      - EarningsPerShareDiluted
+      - Assets
+      - DeferredRevenue
+      - AccountsReceivable
+      - Inventory
+  - name: Profitability
+    direction: higher_is_better      # stated convention, per refined plan
+    default_weight: equal
+    min_coverage: 0.7
+    members:
+      - GrossProfit
+      - GrossMargin
+      - OperatingIncomeLoss
+      - OperatingMargin
+      - NetIncomeLoss
+      - NetMargin
+      - EarningsPerShareBasic
+      - EarningsPerShareDiluted
+      - ReturnOnAssets
+      - ReturnOnEquity
+      - EBITDA
+      - EBITDA_margin
+  - name: Operating efficiency
+    direction: profile_comparison    # no "best company" ranking; R&D intensity is descriptive
+    default_weight: equal
+    min_coverage: 0.5
+    members:
+      - R&D_expense_to_revenue
+      - SalesAndMarketing_to_revenue
+      - G&A_to_revenue
+      - TotalOperatingExpense_to_revenue
+      - AssetTurnover
+      - Capex_to_revenue
+      - OperatingCashFlow_to_revenue
+      - FreeCashFlowMargin
+
+# -----------------------------------------------------------------------------
+# AAPL vs MSFT — verified concept dictionary (week-4 deliverable slice).
+# Every row below was observed in Person A's evidence_units OR directly in
+# the original 10-K filings under data_ingestion_and_processing/staging/ —
+# each was verified against the source document (scripts/verify_dictionary.py).
+# Entries not present in A's dataset yet (e.g. MSFT DepreciationAndAmortization,
+# which needs the extension tag re-ingest) are surfaced as NOTES by
+# acceptance_check rather than counted as mapping failures.
+# -----------------------------------------------------------------------------
+companies:
+  AAPL:
+    fiscal_year: 2025
+    filing:
+      cik: "0000320193"
+      accession_number: "0000320193-25-000079"
+      primary_document: "aapl-20250927.htm"
+      period_end: "2025-09-27"
+      filing_date: "2025-10-31"
+    concepts:
+      Revenue_total:
+        xbrl_tag: RevenueFromContractWithCustomerExcludingAssessedTax
+        row_label: "Total net sales"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 416161000000
+        status: accepted
+      Revenue_segment:
+        product:
+          row_label: "Products"
+          dimension_member: "us-gaap:ProductMember"
+          value: 307003000000
+          status: rejected_as_total        # reason: dimension_mismatch
+        service:
+          row_label: "Services"
+          dimension_member: "us-gaap:ServiceMember"
+          value: 109158000000
+          status: rejected_as_total        # reason: dimension_mismatch
+        reconciliation: "307,003M + 109,158M = 416,161M (0.00% gap)"
+      R&D_expense:
+        xbrl_tag: ResearchAndDevelopmentExpense
+        row_label: "Research and development"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 34550000000
+        status: accepted
+        note: >-
+          Segment-note rows carry the same value under Corporate
+          (dimension CorporateNonSegmentMember) and are rejected; rows for
+          the 3 comparative years also appear (31,370M / 29,915M).
+      GrossProfit:
+        xbrl_tag: GrossProfit
+        row_label: "Gross margin"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 195201000000
+        status: accepted
+      CostOfRevenue:
+        xbrl_tag: CostOfGoodsAndServicesSold
+        row_label: "Total cost of sales"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 220960000000
+        status: accepted
+      OperatingIncomeLoss:
+        xbrl_tag: OperatingIncomeLoss
+        row_label: "Operating income"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 133050000000
+        status: accepted
+      OperatingExpenses:
+        xbrl_tag: OperatingExpenses
+        row_label: "Total operating expenses"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 62151000000
+        status: accepted
+      NetIncomeLoss:
+        xbrl_tag: NetIncomeLoss
+        row_label: "Net income"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 112010000000
+        status: accepted
+      EarningsPerShareDiluted:
+        xbrl_tag: EarningsPerShareDiluted
+        row_label: "Diluted"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 7.46
+        status: accepted
+      SellingAndMarketingExpense:
+        xbrl_tag: SellingGeneralAndAdministrativeExpense   # income statement row
+        row_label: "Selling, general and administrative"
+        section_path: "consolidated statements of operations"
+        source_page: 31
+        value: 27601000000
+        status: accepted
+        note: >-
+          AAPL reports combined SG&A on the income statement (27,601M);
+          the segment note splits it into "Selling and marketing" 19,524M
+          + "General and administrative" 8,077M (19,524 + 8,077 = 27,601).
+          Prefer the combined SG&A row for cross-company comparisons.
+      GeneralAndAdministrativeExpense:
+        xbrl_tag: GeneralAndAdministrativeExpense
+        row_label: "General and administrative"
+        source_page: 49
+        value: 8077000000
+        status: accepted_part_of_sga
+      Assets:
+        xbrl_tag: Assets
+        row_label: "Total assets"
+        section_path: "consolidated balance sheets"
+        source_page: 33
+        value: 359241000000
+        status: accepted
+      StockholdersEquity:
+        xbrl_tag: StockholdersEquity
+        row_label: "Total shareholders’ equity"   # apostrophe as printed in the 10-K (U+2019)
+        section_path: "consolidated balance sheets"
+        source_page: 33
+        value: 73733000000
+        status: accepted
+      AccountsReceivable:
+        xbrl_tag: AccountsReceivableNetCurrent
+        row_label: "Accounts receivable, net"
+        section_path: "consolidated balance sheets"
+        source_page: 33
+        value: 39777000000
+        status: accepted
+      Inventory:
+        xbrl_tag: InventoryNet
+        row_label: "Inventories"
+        section_path: "consolidated balance sheets"
+        source_page: 33
+        value: 5718000000
+        status: accepted
+      DeferredRevenue:
+        xbrl_tag: ContractWithCustomerLiabilityCurrent
+        row_label: "Deferred revenue"
+        section_path: "consolidated balance sheets"
+        source_page: 33
+        value: 9055000000
+        status: accepted
+      Capex:
+        xbrl_tag: PaymentsToAcquirePropertyPlantAndEquipment
+        row_label: "Payments for acquisition of property, plant and equipment"
+        section_path: "consolidated statements of cash flows"
+        source_page: 35
+        value: 12715000000
+        status: accepted
+      OperatingCashFlow:
+        xbrl_tag: NetCashProvidedByUsedInOperatingActivities
+        row_label: "Cash generated by operating activities"
+        section_path: "consolidated statements of cash flows"
+        source_page: 35
+        value: 111482000000
+        status: accepted
+      DepreciationAndAmortization:
+        xbrl_tag: DepreciationDepletionAndAmortization
+        row_label: "Depreciation and amortization"
+        section_path: "consolidated statements of cash flows"
+        source_page: 35
+        value: 11698000000
+        status: accepted
+      WeightedAverageNumberOfDilutedSharesOutstanding:
+        xbrl_tag: WeightedAverageNumberOfDilutedSharesOutstanding
+        row_label: "Diluted"
+        value: 15004697000
+        status: accepted
+    cross_checks:
+      - "gross_profit_identity: 195,201 = 416,161 − 220,960 (0.00% gap)"
+      - "operating_income_identity: 133,050 = 195,201 − 62,151 (0.00% gap)"
+      - "eps_identity: 7.46 ≈ 112,010 / 15,004.7 (0.07% gap)"
+      - "opex_composition: 27,601 SG&A + 34,550 R&D = 62,151"
+
+  MSFT:
+    fiscal_year: 2025
+    filing:
+      cik: "0000789019"
+      accession_number: "0000950170-25-100235"
+      primary_document: "msft-20250630.htm"
+      period_end: "2025-06-30"
+    concepts:
+      Revenue_total:
+        xbrl_tag: RevenueFromContractWithCustomerExcludingAssessedTax
+        row_label: "Total revenue"
+        source_page: 50
+        value: 281724000000
+        status: accepted
+      Revenue_segment:
+        product:
+          row_label: "Product"
+          dimension_member: "us-gaap:ProductMember"
+          value: 63946000000
+          status: rejected_as_total        # reason: dimension_mismatch
+        service:
+          row_label: "Service and other"
+          dimension_member: "us-gaap:ServiceOtherMember"
+          value: 217778000000
+          status: rejected_as_total        # reason: dimension_mismatch
+        reconciliation: "63,946M + 217,778M = 281,724M (0.00% gap)"
+        adversarial_note: >-
+          Microsoft's Intelligent Cloud segment (106,265M) is also rejected
+          as Revenue_total; reading it as the total would have shown a 95.8%
+          net margin instead of 36.1% (Group16.pdf p.10).
+      R&D_expense:
+        xbrl_tag: ResearchAndDevelopmentExpense
+        row_label: "Research and development"
+        source_page: 50
+        value: 32488000000
+        status: accepted
+      GrossProfit:
+        xbrl_tag: GrossProfit
+        row_label: "Gross margin"
+        source_page: 50
+        value: 193893000000
+        status: accepted
+      CostOfRevenue:
+        xbrl_tag: CostOfGoodsAndServicesSold
+        row_label: "Total cost of revenue"
+        source_page: 50
+        value: 87831000000
+        status: accepted
+      OperatingIncomeLoss:
+        xbrl_tag: OperatingIncomeLoss
+        row_label: "Operating income"
+        source_page: 50
+        value: 128528000000
+        status: accepted
+      OperatingExpenses:
+        xbrl_tag: OperatingExpenses
+        row_label: "Operating expenses"
+        source_page: 84
+        value: 65365000000
+        status: accepted
+      NetIncomeLoss:
+        xbrl_tag: NetIncomeLoss
+        row_label: "Net income"
+        source_page: 50
+        value: 101832000000
+        status: accepted
+      EarningsPerShareDiluted:
+        xbrl_tag: EarningsPerShareDiluted
+        row_label: "Diluted"
+        source_page: 50
+        value: 13.64
+        status: accepted
+      SellingAndMarketingExpense:
+        xbrl_tag: SellingAndMarketingExpense
+        row_label: "Sales and marketing"
+        source_page: 50
+        value: 25654000000
+        status: accepted
+      GeneralAndAdministrativeExpense:
+        xbrl_tag: GeneralAndAdministrativeExpense
+        row_label: "General and administrative"
+        source_page: 50
+        value: 7223000000
+        status: accepted
+      Assets:
+        xbrl_tag: Assets
+        row_label: "Total assets"
+        source_page: 52
+        value: 619003000000
+        status: accepted
+      StockholdersEquity:
+        xbrl_tag: StockholdersEquity
+        row_label: "Total stockholders’ equity"   # apostrophe as printed in the 10-K (U+2019)
+        source_page: 52
+        value: 343479000000
+        status: accepted
+      AccountsReceivable:
+        xbrl_tag: AccountsReceivableNetCurrent
+        row_label: "Accounts receivable, net of allowance for doubtful accounts"
+        source_page: 52
+        value: 69905000000
+        status: accepted
+      Inventory:
+        xbrl_tag: InventoryNet
+        row_label: "Inventories"
+        source_page: 52
+        value: 938000000
+        status: accepted
+      DeferredRevenue:
+        xbrl_tag: ContractWithCustomerLiabilityCurrent
+        row_label: "Short-term unearned revenue"
+        source_page: 52
+        value: 64555000000
+        status: accepted
+      Capex:
+        xbrl_tag: PaymentsToAcquirePropertyPlantAndEquipment
+        row_label: "Additions to property and equipment"
+        source_page: 53
+        value: 64551000000
+        status: accepted
+      OperatingCashFlow:
+        xbrl_tag: NetCashProvidedByUsedInOperatingActivities
+        row_label: "Net cash from operations"
+        source_page: 53
+        value: 136162000000
+        status: accepted
+      DepreciationAndAmortization:
+        xbrl_tag: msft:DepreciationAmortizationAndOther    # company extension tag
+        row_label: "Depreciation, amortization, and other"
+        source_page: 53
+        value: 34153000000
+        status: accepted
+        note: >-
+          MSFT does not tag this line with the standard
+          us-gaap:DepreciationDepletionAndAmortization concept; it uses the
+          extension tag msft:DepreciationAmortizationAndOther (cash flow
+          statement, scale=6). FY2025 period: 2024-07-01 to 2025-06-30.
+      WeightedAverageNumberOfDilutedSharesOutstanding:
+        xbrl_tag: WeightedAverageNumberOfDilutedSharesOutstanding
+        row_label: "Diluted"
+        source_page: 50
+        value: 7465000000
+        status: accepted
+    cross_checks:
+      - "gross_profit_identity: 193,893 = 281,724 − 87,831 (0.00% gap)"
+      - "operating_income_identity: 128,528 = 193,893 − 65,365 (0.00% gap)"
+      - "eps_identity: 13.64 ≈ 101,832 / 7,465 (0.01% gap)"
+      - "opex_composition: 32,488 R&D + 25,654 S&M + 7,223 G&A = 65,365"
+      - "ebitda: 128,528 + 34,153 D&A = 162,681"
+
+# -----------------------------------------------------------------------------
+# NOTES / open decisions for the team (v0.1)
+# -----------------------------------------------------------------------------
+# 1. Name harmonisation: Person A's raw units use metric names such as
+#    ResearchAndDevelopmentExpense / PaymentsToAcquirePropertyPlantAndEquipment,
+#    while the spec uses R&D_expense / Capex. `metric` above is the join key;
+#    `canonical_name` is the schema name.
+# 2. Person A's derived units also carry duplicated level metrics
+#    (OperatingIncome, NetIncome, DilutedEPS as `calculation` units). Stage 4
+#    should prefer the xbrl_tag unit when both exist ("decide once, audit once").
+# 3. SupplyChainConcentrationRisk (spec-required) cannot be joined until
+#    Person A emits paragraph/footnote units (Stage 3 v2).
+# 4. Same concept, different labels: AAPL "Total net sales" vs MSFT "Total
+#    revenue" — both map to Revenue_total via the same XBRL tag; the
+#    alignment edge connects them (Group16.pdf p.13 example).
+# 5. Comparative years: segment rows carry FY2023/24/25 values with no period
+#    field; the reconciliation check (segment sum ≈ pinned total) selects the
+#    correct year's rows.
+# 6. AAPL SG&A: income statement reports combined SG&A; the segment note
+#    splits S&M + G&A. Prefer the combined row (see company dictionary).
