@@ -1,0 +1,13 @@
+﻿# Person C (retrieval / generation / UI)
+fastapi>=0.110
+uvicorn>=0.29
+streamlit>=1.35
+pydantic>=2
+requests
+httpx
+pandas
+numpy
+scikit-learn
+pytest
+# optional: semantic dense backend (set SECTORVIEW_DENSE=sbert)
+# sentence-transformers
