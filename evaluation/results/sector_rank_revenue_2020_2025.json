@@ -1,0 +1,658 @@
+{
+  "metric": "Revenue_total",
+  "fy_from": 2020,
+  "fy_to": 2025,
+  "companies_asked": 30,
+  "ranked": [
+    {
+      "ticker": "NVDA",
+      "start": {
+        "value": 10918000000.0,
+        "unit_id": "4036bcc73540f1d0",
+        "page": 39,
+        "row_label": "Revenue",
+        "accession_number": "0001045810-20-000010",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 130497000000.0,
+        "unit_id": "6ad85f27a64b77b6",
+        "page": 52,
+        "row_label": "Revenue",
+        "accession_number": "0001045810-25-000023",
+        "fiscal_year": 2025
+      },
+      "growth": 10.952463821212676,
+      "cagr": 0.6424474663810262,
+      "rank": 1
+    },
+    {
+      "ticker": "ANET",
+      "start": {
+        "value": 2317512000.0,
+        "unit_id": "3f8d6186c1f0f97d",
+        "page": 73,
+        "row_label": "Total revenue",
+        "accession_number": "0001596532-21-000049",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 9005700000.0,
+        "unit_id": "8648cdf79662b704",
+        "page": 69,
+        "row_label": "Total revenue",
+        "accession_number": "0001596532-26-000013",
+        "fiscal_year": 2025
+      },
+      "growth": 2.885934571212576,
+      "cagr": 0.31189506024306746,
+      "rank": 2
+    },
+    {
+      "ticker": "AMD",
+      "start": {
+        "value": 9763000000.0,
+        "unit_id": "1d04447e3f391198",
+        "page": 49,
+        "row_label": "Net revenue",
+        "accession_number": "0001628280-21-001185",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 34639000000.0,
+        "unit_id": "d9e6534c7183539c",
+        "page": 58,
+        "row_label": "Net revenue",
+        "accession_number": "0000002488-26-000018",
+        "fiscal_year": 2025
+      },
+      "growth": 2.5479872989859675,
+      "cagr": 0.2882389065515516,
+      "rank": 3
+    },
+    {
+      "ticker": "NOW",
+      "start": {
+        "value": 4519484000.0,
+        "unit_id": "c3164855e611674f",
+        "page": 53,
+        "row_label": "Total revenues",
+        "accession_number": "0001373715-21-000061",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 13278000000.0,
+        "unit_id": "4c02c9ed18c2d4f6",
+        "page": 71,
+        "row_label": "Total revenues",
+        "accession_number": "0001373715-26-000007",
+        "fiscal_year": 2025
+      },
+      "growth": 1.9379460133059436,
+      "cagr": 0.2405342584964043,
+      "rank": 4
+    },
+    {
+      "ticker": "PANW",
+      "start": {
+        "value": 3408400000.0,
+        "unit_id": "bb0af3317569fe38",
+        "page": 61,
+        "row_label": "Total revenue",
+        "accession_number": "0001327567-20-000032",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 9221500000.0,
+        "unit_id": "41ff00db96e95da0",
+        "page": 62,
+        "row_label": "Total revenue",
+        "accession_number": "0001327567-25-000027",
+        "fiscal_year": 2025
+      },
+      "growth": 1.7055216523882173,
+      "cagr": 0.2202538955917348,
+      "rank": 5
+    },
+    {
+      "ticker": "APH",
+      "start": {
+        "value": 8598900000.0,
+        "unit_id": "aaf73fe52aee8a2b",
+        "page": 47,
+        "row_label": "Net sales",
+        "accession_number": "0001558370-21-000881",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 23094700000.0,
+        "unit_id": "4450ba9b02f61c79",
+        "page": 55,
+        "row_label": "Net sales",
+        "accession_number": "0001104659-26-013549",
+        "fiscal_year": 2025
+      },
+      "growth": 1.6857737617602253,
+      "cagr": 0.218467319160899,
+      "rank": 6
+    },
+    {
+      "ticker": "AVGO",
+      "start": {
+        "value": 23888000000.0,
+        "unit_id": "628f6c15664b82e9",
+        "page": 58,
+        "row_label": "Total net revenue",
+        "accession_number": "0001730168-20-000226",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 63887000000.0,
+        "unit_id": "7dc418a3ecb4c773",
+        "page": 48,
+        "row_label": "Total net revenue",
+        "accession_number": "0001730168-25-000121",
+        "fiscal_year": 2025
+      },
+      "growth": 1.6744390488948424,
+      "cagr": 0.21743712435641926,
+      "rank": 7
+    },
+    {
+      "ticker": "FTNT",
+      "start": {
+        "value": 2594400000.0,
+        "unit_id": "ba5837a8d7bde4b7",
+        "page": 74,
+        "row_label": "Total revenue",
+        "accession_number": "0001262039-21-000008",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 6799600000.0,
+        "unit_id": "65c159585cde1f4d",
+        "page": 79,
+        "row_label": "Total revenue",
+        "accession_number": "0001262039-26-000007",
+        "fiscal_year": 2025
+      },
+      "growth": 1.6208757323465925,
+      "cagr": 0.21252104718544174,
+      "rank": 8
+    },
+    {
+      "ticker": "INTU",
+      "start": {
+        "value": 7679000000.0,
+        "unit_id": "6b2a61aa81966d46",
+        "page": null,
+        "row_label": null,
+        "accession_number": "0000896878-22-000028",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 18831000000.0,
+        "unit_id": "baf083babf26b85b",
+        "page": 96,
+        "row_label": "Total net revenue",
+        "accession_number": "0000896878-25-000035",
+        "fiscal_year": 2025
+      },
+      "growth": 1.4522724313061595,
+      "cagr": 0.1965028658180299,
+      "rank": 9
+    },
+    {
+      "ticker": "CRM",
+      "start": {
+        "value": 17098000000.0,
+        "unit_id": "8d04351f6e2e652c",
+        "page": 56,
+        "row_label": "Total revenues",
+        "accession_number": "0001108524-20-000014",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 37895000000.0,
+        "unit_id": "acdab785dbebb204",
+        "page": 60,
+        "row_label": "Total revenues",
+        "accession_number": "0001108524-25-000006",
+        "fiscal_year": 2025
+      },
+      "growth": 1.2163410925254414,
+      "cagr": 0.1725390620117686,
+      "rank": 10
+    },
+    {
+      "ticker": "KLAC",
+      "start": {
+        "value": 5806424000.0,
+        "unit_id": "bf299f08c56f2403",
+        "page": 62,
+        "row_label": "Total revenues",
+        "accession_number": "0000319201-20-000047",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 12156162000.0,
+        "unit_id": "ddf35e11ee46cd2b",
+        "page": 51,
+        "row_label": "Total revenues",
+        "accession_number": "0000319201-25-000024",
+        "fiscal_year": 2025
+      },
+      "growth": 1.093571189427434,
+      "cagr": 0.15925117998554894,
+      "rank": 11
+    },
+    {
+      "ticker": "MSFT",
+      "start": {
+        "value": 143015000000.0,
+        "unit_id": "8398a0a5dcde5bca",
+        "page": 55,
+        "row_label": "Total revenue",
+        "accession_number": "0001564590-20-034944",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 281724000000.0,
+        "unit_id": "c239e72f18df7417",
+        "page": 50,
+        "row_label": "Total revenue",
+        "accession_number": "0000950170-25-100235",
+        "fiscal_year": 2025
+      },
+      "growth": 0.9698912701464881,
+      "cagr": 0.145218753307105,
+      "rank": 12
+    },
+    {
+      "ticker": "ADI",
+      "start": {
+        "value": 5603056000.0,
+        "unit_id": "22c5b27eb6e54b38",
+        "page": 49,
+        "row_label": "Revenue",
+        "accession_number": "0000006281-20-000156",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 11019707000.0,
+        "unit_id": "abbd641e408defc8",
+        "page": 44,
+        "row_label": "Revenue",
+        "accession_number": "0000006281-25-000153",
+        "fiscal_year": 2025
+      },
+      "growth": 0.9667315479267029,
+      "cagr": 0.14485112925375,
+      "rank": 13
+    },
+    {
+      "ticker": "SNPS",
+      "start": {
+        "value": 3685281000.0,
+        "unit_id": "a32267189648c12a",
+        "page": 53,
+        "row_label": "Total revenue",
+        "accession_number": "0000883241-20-000015",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 7054178000.0,
+        "unit_id": "190d2b355c3256c0",
+        "page": 58,
+        "row_label": "Total revenue",
+        "accession_number": "0000883241-25-000028",
+        "fiscal_year": 2025
+      },
+      "growth": 0.9141492873949097,
+      "cagr": 0.13866287520721876,
+      "rank": 14
+    },
+    {
+      "ticker": "QCOM",
+      "start": {
+        "value": 23531000000.0,
+        "unit_id": "a8a5b06ab58a4c2f",
+        "page": 62,
+        "row_label": "Total revenues",
+        "accession_number": "0001728949-20-000067",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 44284000000.0,
+        "unit_id": "3d0fb82ab8387e44",
+        "page": 58,
+        "row_label": "Total revenues",
+        "accession_number": "0000804328-25-000085",
+        "fiscal_year": 2025
+      },
+      "growth": 0.8819429688496025,
+      "cagr": 0.13480513327048627,
+      "rank": 15
+    },
+    {
+      "ticker": "ADSK",
+      "start": {
+        "value": 3274300000.0,
+        "unit_id": "f0ea5e34f286a866",
+        "page": 60,
+        "row_label": "Total net revenue",
+        "accession_number": "0000769397-20-000013",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 6131000000.0,
+        "unit_id": "e3bed3f740f1adbf",
+        "page": 67,
+        "row_label": "Total net revenue",
+        "accession_number": "0000769397-25-000019",
+        "fiscal_year": 2025
+      },
+      "growth": 0.8724612894359101,
+      "cagr": 0.13365933781023753,
+      "rank": 16
+    },
+    {
+      "ticker": "ADBE",
+      "start": {
+        "value": 12868000000.0,
+        "unit_id": "a9049675730629d8",
+        "page": 63,
+        "row_label": "Total revenue",
+        "accession_number": "0000796343-21-000004",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 23769000000.0,
+        "unit_id": "c15150287b2066f1",
+        "page": 48,
+        "row_label": "Total revenue",
+        "accession_number": "0000796343-26-000003",
+        "fiscal_year": 2025
+      },
+      "growth": 0.8471401927261424,
+      "cagr": 0.13057654594156753,
+      "rank": 17
+    },
+    {
+      "ticker": "LRCX",
+      "start": {
+        "value": 10044736000.0,
+        "unit_id": "aa6787ea57cb9578",
+        "page": 50,
+        "row_label": "Revenue",
+        "accession_number": "0000707549-20-000138",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 18435591000.0,
+        "unit_id": "c69d2188cc719888",
+        "page": 38,
+        "row_label": "Revenue",
+        "accession_number": "0000707549-25-000075",
+        "fiscal_year": 2025
+      },
+      "growth": 0.835348485017426,
+      "cagr": 0.12912937900992283,
+      "rank": 18
+    },
+    {
+      "ticker": "MU",
+      "start": {
+        "value": 21435000000.0,
+        "unit_id": "4b1764c5a2563162",
+        "page": 47,
+        "row_label": "Revenue",
+        "accession_number": "0000723125-20-000082",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 37378000000.0,
+        "unit_id": "2e91c3831529e64b",
+        "page": 64,
+        "row_label": "Revenue",
+        "accession_number": "0000723125-25-000028",
+        "fiscal_year": 2025
+      },
+      "growth": 0.7437835316071846,
+      "cagr": 0.11763119291842661,
+      "rank": 19
+    },
+    {
+      "ticker": "AMAT",
+      "start": {
+        "value": 17202000000.0,
+        "unit_id": "bf4d9c001bc4c75c",
+        "page": 64,
+        "row_label": "Net sales",
+        "accession_number": "0000006951-20-000048",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 28368000000.0,
+        "unit_id": "aa9a00148f2098d0",
+        "page": 47,
+        "row_label": "Net revenue",
+        "accession_number": "0001628280-25-056742",
+        "fiscal_year": 2025
+      },
+      "growth": 0.6491105685385421,
+      "cagr": 0.10522310397599743,
+      "rank": 20
+    },
+    {
+      "ticker": "MSI",
+      "start": {
+        "value": 7414000000.0,
+        "unit_id": "45e14d42badecd48",
+        "page": 52,
+        "row_label": "Net sales",
+        "accession_number": "0000068505-21-000008",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 11682000000.0,
+        "unit_id": "76e6b99f51192bc5",
+        "page": 58,
+        "row_label": "Net sales",
+        "accession_number": "0000068505-26-000010",
+        "fiscal_year": 2025
+      },
+      "growth": 0.57566765578635,
+      "cagr": 0.09519871115386103,
+      "rank": 21
+    },
+    {
+      "ticker": "ACN",
+      "start": {
+        "value": 44327039000.0,
+        "unit_id": "51ac18b60a02e561",
+        "page": 56,
+        "row_label": "Revenues",
+        "accession_number": "0001467373-20-000376",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 69672977000.0,
+        "unit_id": "77cdd04866813c64",
+        "page": 62,
+        "row_label": "Revenues",
+        "accession_number": "0001467373-25-000217",
+        "fiscal_year": 2025
+      },
+      "growth": 0.5717940690782437,
+      "cagr": 0.09465969836955224,
+      "rank": 22
+    },
+    {
+      "ticker": "AAPL",
+      "start": {
+        "value": 274515000000.0,
+        "unit_id": "dc955c7327952e15",
+        "page": 31,
+        "row_label": "Total net sales",
+        "accession_number": "0000320193-20-000096",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 416161000000.0,
+        "unit_id": "2d42611d782b506c",
+        "page": 29,
+        "row_label": "Total net sales",
+        "accession_number": "0000320193-25-000079",
+        "fiscal_year": 2025
+      },
+      "growth": 0.515986375972169,
+      "cagr": 0.08677354924090741,
+      "rank": 23
+    },
+    {
+      "ticker": "ORCL",
+      "start": {
+        "value": 39068000000.0,
+        "unit_id": "34ec5f30a2d137fc",
+        "page": 70,
+        "row_label": "Total revenues",
+        "accession_number": "0001564590-20-030125",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 57399000000.0,
+        "unit_id": "910c2855035d73ba",
+        "page": 65,
+        "row_label": "Total revenues",
+        "accession_number": "0000950170-25-087926",
+        "fiscal_year": 2025
+      },
+      "growth": 0.4692075355789904,
+      "cagr": 0.07998227913928768,
+      "rank": 24
+    },
+    {
+      "ticker": "TXN",
+      "start": {
+        "value": 14461000000.0,
+        "unit_id": "17d93ca89af44365",
+        "page": 24,
+        "row_label": "Revenue",
+        "accession_number": "0000097476-21-000006",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 17682000000.0,
+        "unit_id": "85a7098801043b2a",
+        "page": 27,
+        "row_label": "Revenue",
+        "accession_number": "0000097476-26-000059",
+        "fiscal_year": 2025
+      },
+      "growth": 0.2227370168038172,
+      "cagr": 0.041038070937830184,
+      "rank": 25
+    },
+    {
+      "ticker": "CSCO",
+      "start": {
+        "value": 49301000000.0,
+        "unit_id": "9b622130072c5060",
+        "page": 60,
+        "row_label": "Total revenue",
+        "accession_number": "0000858877-20-000010",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 56654000000.0,
+        "unit_id": "3817c7a8c6dea5e7",
+        "page": 57,
+        "row_label": "Total revenue",
+        "accession_number": "0000858877-25-000111",
+        "fiscal_year": 2025
+      },
+      "growth": 0.1491450477677938,
+      "cagr": 0.028193774467121013,
+      "rank": 26
+    },
+    {
+      "ticker": "HPQ",
+      "start": {
+        "value": 56639000000.0,
+        "unit_id": "4b0653db6b7f9623",
+        "page": 58,
+        "row_label": "Net revenue",
+        "accession_number": "0000047217-20-000045",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 55295000000.0,
+        "unit_id": "6184b8e9a47bf900",
+        "page": 50,
+        "row_label": "Total net revenue",
+        "accession_number": "0000047217-25-000071",
+        "fiscal_year": 2025
+      },
+      "growth": -0.023729232507636033,
+      "cagr": -0.0047915448143359685,
+      "rank": 27
+    },
+    {
+      "ticker": "IBM",
+      "start": {
+        "value": 73620000000.0,
+        "unit_id": "8eb98431e10f89ae",
+        "page": null,
+        "row_label": null,
+        "accession_number": "0001558370-21-001489",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 67535000000.0,
+        "unit_id": "f55759b67608cb1f",
+        "page": null,
+        "row_label": null,
+        "accession_number": "0000051143-26-000010",
+        "fiscal_year": 2025
+      },
+      "growth": -0.08265417006248299,
+      "cagr": -0.017106148785038244,
+      "rank": 28
+    },
+    {
+      "ticker": "INTC",
+      "start": {
+        "value": 77867000000.0,
+        "unit_id": "abb364f275fb7a78",
+        "page": 74,
+        "row_label": "Net revenue",
+        "accession_number": "0000050863-21-000010",
+        "fiscal_year": 2020
+      },
+      "end": {
+        "value": 52853000000.0,
+        "unit_id": "3ea819f8453e4649",
+        "page": 60,
+        "row_label": "Net revenue",
+        "accession_number": "0000050863-26-000011",
+        "fiscal_year": 2025
+      },
+      "growth": -0.32124006318466103,
+      "cagr": -0.07457071162960704,
+      "rank": 29
+    }
+  ],
+  "missing": [
+    {
+      "ticker": "CDNS",
+      "missing": [
+        2020
+      ]
+    }
+  ],
+  "reports_used": 58,
+  "answer_ms": 2548.98,
+  "engine_build_s": 5.06,
+  "units_loaded": 26293
+}
