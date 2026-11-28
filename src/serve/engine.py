@@ -34,6 +34,7 @@ from src.align.validate import (
 from src.index.bm25 import BM25Index, unit_text
 from src.index.dense import DenseIndex
 from src.serve.query_parser import COMPANY_ALIASES, ParsedQuery, QueryParser
+from src.util.formula import _formula_names, _safe_formula, eval_formula
 from src.util.yaml import load as load_yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -268,12 +269,16 @@ class Engine:
             values: Dict[str, Dict[str, Any]] = {}       # ticker -> {value, unit_ids, unit}
             if metric_name in self.derived:
                 d = self.derived[metric_name]
-                num, den = d.get("numerator"), d.get("denominator")
-                if num not in self.base or den not in self.base or "/" not in str(d.get("formula")):
+                den = d.get("denominator")
+                # Every name in the formula, e.g. (OperatingCashFlow - abs(Capex)) / Revenue_total.
+                # (Before: only numerator/denominator were used, so free cash flow
+                # silently ignored Capex.) Formulas built on other derived metrics
+                # (EBITDA_margin) are left to the category fact sheet.
+                operands = [n.replace("_and_", "&") for n in _formula_names(_safe_formula(d["formula"]))]
+                if any(op not in self.base for op in operands):
                     resp["diagnostics"]["unsupported"].append(
-                        {"metric": metric_name, "reason": "formula_not_a_base_ratio"})
+                        {"metric": metric_name, "reason": "formula_uses_a_derived_metric"})
                     continue
-                operands = [num, den]
             elif metric_name in self.base:
                 d, operands = None, [metric_name]
             else:
@@ -311,22 +316,23 @@ class Engine:
                                   f"({u.get('row_label')}).",
                           [u["unit_id"]], ticker=tk, metric=metric_name, value=val, unit=unit)
                 else:
-                    un, ud = picks[num], picks[den]
-                    n_val, d_val = float(un["value"]), float(ud["value"])
-                    if d_val <= 0:                      # denominator > 0 constraint (spec Tier 2)
+                    ids = [picks[op]["unit_id"] for op in operands]
+                    vals = {op: float(picks[op]["value"]) for op in operands}
+                    if den in vals and vals[den] <= 0:  # denominator > 0 constraint (spec Tier 2)
                         claim("coverage", f"{name} {metric_name} rejected: denominator "
-                                          f"{den} is not positive.", [un["unit_id"], ud["unit_id"]],
+                                          f"{den} is not positive.", ids,
                               ticker=tk, metric=metric_name, status="denominator_nonpositive")
                         continue
-                    val = n_val / d_val
-                    ids = [un["unit_id"], ud["unit_id"]]
-                    values[tk] = {"value": val, "unit": "ratio", "ids": ids}
+                    val = eval_formula(d["formula"], vals)
+                    vunit = "ratio" if "/" in d["formula"] else (picks[operands[0]].get("unit") or "USD")
+                    values[tk] = {"value": val, "unit": vunit, "ids": ids}
+                    shown = ", ".join(f"{op} {fmt_value(v, picks[op].get('unit'))}" for op, v in vals.items())
                     claim("derived",
-                          f"{name} FY{fy} {metric_name} = {fmt_value(n_val, un.get('unit'))} "
-                          f"/ {fmt_value(d_val, ud.get('unit'))} = {fmt_value(val, 'ratio')}.",
-                          ids, ticker=tk, metric=metric_name, value=val, unit="ratio",
+                          f"{name} FY{fy} {metric_name} = {d['formula']} with {shown} "
+                          f"= {fmt_value(val, vunit)}.",
+                          ids, ticker=tk, metric=metric_name, value=val, unit=vunit,
                           formula_id=d.get("formula_id"), formula=d.get("formula"),
-                          inputs={num: un["unit_id"], den: ud["unit_id"]})
+                          inputs={op: picks[op]["unit_id"] for op in operands})
 
             if len(values) >= 2:                          # comparison needs both sides' evidence
                 ranked = sorted(values.items(), key=lambda kv: -kv[1]["value"])

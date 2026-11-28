@@ -38,6 +38,10 @@ services:
       # Make /opt/airflow/pipeline.py importable from dags/airflow_dag.py
       PYTHONPATH: "/opt/airflow"
 
+      # SEC asks for a real contact; years to ingest (e.g. "2023,2024,2025")
+      SEC_USER_AGENT: "${SEC_USER_AGENT:-PersonA-Research/1.0 (contact@example.com)}"
+      SECTORVIEW_FISCAL_YEARS: "${SECTORVIEW_FISCAL_YEARS:-2025}"
+
       # Default timezone (adjust if needed)
       TZ: "UTC"
 

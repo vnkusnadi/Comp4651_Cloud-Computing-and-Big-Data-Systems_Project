@@ -51,6 +51,18 @@ def ask(q: str) -> Dict[str, Any]:
         return {**_engine().answer(q), "_via": "in-process"}
 
 
+def ask_category(q: str) -> Dict[str, Any]:
+    """Stage 5b/5c verdict (fact sheet -> AI -> 7 checks)."""
+    try:
+        import requests
+        r = requests.post(f"{API}/category", json={"query": q}, timeout=120)
+        r.raise_for_status()
+        return r.json()
+    except Exception:
+        from src.analysis.category import answer
+        return answer(q, engine=_engine())
+
+
 def evidence_df(rows) -> pd.DataFrame:
     return pd.DataFrame([{
         "unit_id": e["unit_id"], "company": e.get("ticker"), "FY": e.get("fiscal_year"),
@@ -75,6 +87,30 @@ with st.sidebar:
 if go or "resp" not in st.session_state:
     st.session_state["resp"] = ask(q)
 resp = st.session_state["resp"]
+
+if resp["parsed"]["intent"] == "category_analysis":
+    if st.session_state.get("cat_q") != resp["query"]:
+        st.session_state["cat"] = ask_category(resp["query"])
+        st.session_state["cat_q"] = resp["query"]
+    cat = st.session_state["cat"]
+    v = cat["verdict"]
+    label = {"ai_verified": "AI verdict, passed all 7 checks",
+             "code_only_no_llm": "Code-only verdict (no AI key set)",
+             "code_only_fallback": "Code-only verdict (AI answer failed the checks)"}.get(cat["status"], cat["status"])
+    st.subheader("Verdict")
+    st.success(v["summary"])
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Winner", v.get("winner") or "none (profile)")
+    c2.metric("Stability", v.get("stability_label") or "n/a")
+    c3.metric("Checks passed", f"{sum(c['passed'] for c in cat['gate']['checks'])}/7")
+    st.caption(label)
+    if v.get("tradeoffs"):
+        st.write("Tradeoffs: " + "; ".join(t["text"] for t in v["tradeoffs"]))
+    st.caption("Missing: " + v.get("missing_disclosure", ""))
+    with st.expander("7 checks"):
+        st.dataframe(pd.DataFrame([{"check": c["check"], "passed": c["passed"]} for c in cat["gate"]["checks"]]),
+                     hide_index=True)
+    st.divider()
 
 col1, col2, col3 = st.columns([1.1, 1.6, 1.1])
 
