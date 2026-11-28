@@ -1,0 +1,152 @@
+[
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2021,
+    "units": 158,
+    "seconds": 2.11
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2021,
+    "units": 179,
+    "seconds": 6.43
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2021,
+    "units": 139,
+    "seconds": 1.44
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2021,
+    "units": 133,
+    "seconds": 2.48
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2021,
+    "units": 180,
+    "seconds": 5.91
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2022,
+    "units": 156,
+    "seconds": 1.49
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2022,
+    "units": 175,
+    "seconds": 5.83
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2022,
+    "units": 131,
+    "seconds": 1.48
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2022,
+    "units": 128,
+    "seconds": 2.23
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2022,
+    "units": 185,
+    "seconds": 3.14
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2023,
+    "units": 156,
+    "seconds": 1.61
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2023,
+    "units": 184,
+    "seconds": 5.58
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2023,
+    "units": 132,
+    "seconds": 1.63
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2023,
+    "units": 129,
+    "seconds": 2.16
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2023,
+    "units": 186,
+    "seconds": 2.81
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2024,
+    "units": 156,
+    "seconds": 1.5
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2024,
+    "units": 171,
+    "seconds": 5.46
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2024,
+    "units": 136,
+    "seconds": 1.55
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2024,
+    "units": 136,
+    "seconds": 2.51
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2024,
+    "units": 181,
+    "seconds": 3.05
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2025,
+    "units": 172,
+    "seconds": 1.47
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2025,
+    "units": 185,
+    "seconds": 5.03
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2025,
+    "units": 144,
+    "seconds": 1.71
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2025,
+    "units": 137,
+    "seconds": 2.31
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2025,
+    "units": 191,
+    "seconds": 3.11
+  }
+]

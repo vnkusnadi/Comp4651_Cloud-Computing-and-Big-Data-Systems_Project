@@ -1,0 +1,1716 @@
+[
+  {
+    "system": "code_only",
+    "file": "code_only.jsonl",
+    "questions": 33,
+    "answer_accuracy_%": 100.0,
+    "answer_key_questions": 33,
+    "answer_accuracy_scale_profitability_%": 100.0,
+    "strict_accuracy_%": 100.0,
+    "number_accuracy_%": 100.0,
+    "numbers_checked": 394,
+    "right_source_%": 100.0,
+    "sources_checked": 125,
+    "grounded_numbers_%": 100.0,
+    "numbers_stated": 394,
+    "claims_with_sources_%": 100.0,
+    "claims": 176,
+    "median_latency_ms": 54.4,
+    "not_understood": 0,
+    "ai_fell_back_to_code": 0,
+    "per_question": [
+      {
+        "question_id": "Q01",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q02",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q03",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q04",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q05",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q06",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q07",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q08",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q09",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q10",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q11",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q12",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q13",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q14",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q15",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q16",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q17",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q18",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q19",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q20",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q21",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q22",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q23",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q24",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q25",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q26",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q27",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q28",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q29",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q30",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q31",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q32",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "Q33",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      }
+    ]
+  },
+  {
+    "system": "code_only",
+    "file": "code_only_blind_everyday.jsonl",
+    "questions": 24,
+    "answer_accuracy_%": null,
+    "answer_key_questions": 0,
+    "answer_accuracy_scale_profitability_%": null,
+    "strict_accuracy_%": null,
+    "number_accuracy_%": 100.0,
+    "numbers_checked": 68,
+    "right_source_%": 100.0,
+    "sources_checked": 30,
+    "grounded_numbers_%": 100.0,
+    "numbers_stated": 68,
+    "claims_with_sources_%": 100.0,
+    "claims": 34,
+    "median_latency_ms": 7.7,
+    "not_understood": 16,
+    "ai_fell_back_to_code": 0,
+    "per_question": [
+      {
+        "question_id": "N01",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "N02",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N03",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N04",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "N05",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "N06",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N07",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N08",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N09",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N10",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N11",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N12",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N13",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N14",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "N15",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N16",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N17",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N18",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N19",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "N20",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "N21",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      },
+      {
+        "question_id": "N22",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "N23",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "N24",
+        "answer_correct": null,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": null,
+        "status": "not_understood_as_category_question"
+      }
+    ]
+  },
+  {
+    "system": "code_only",
+    "file": "code_only_everyday_wording.jsonl",
+    "questions": 6,
+    "answer_accuracy_%": 100.0,
+    "answer_key_questions": 6,
+    "answer_accuracy_scale_profitability_%": 100.0,
+    "strict_accuracy_%": 100.0,
+    "number_accuracy_%": 100.0,
+    "numbers_checked": 64,
+    "right_source_%": 100.0,
+    "sources_checked": 20,
+    "grounded_numbers_%": 100.0,
+    "numbers_stated": 64,
+    "claims_with_sources_%": 100.0,
+    "claims": 32,
+    "median_latency_ms": 50.2,
+    "not_understood": 0,
+    "ai_fell_back_to_code": 0,
+    "per_question": [
+      {
+        "question_id": "P01",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "P02",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "P03",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "P04",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "P05",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      },
+      {
+        "question_id": "P06",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "code_only_no_llm"
+      }
+    ]
+  },
+  {
+    "system": "ours",
+    "file": "ours.jsonl",
+    "questions": 33,
+    "answer_accuracy_%": 100.0,
+    "answer_key_questions": 33,
+    "answer_accuracy_scale_profitability_%": 100.0,
+    "strict_accuracy_%": 100.0,
+    "number_accuracy_%": 100.0,
+    "numbers_checked": 394,
+    "right_source_%": 100.0,
+    "sources_checked": 125,
+    "grounded_numbers_%": 100.0,
+    "numbers_stated": 394,
+    "claims_with_sources_%": 100.0,
+    "claims": 181,
+    "median_latency_ms": 11616.9,
+    "not_understood": 0,
+    "ai_fell_back_to_code": 0,
+    "per_question": [
+      {
+        "question_id": "Q01",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q02",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q03",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q04",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q05",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q06",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q07",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q08",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q09",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q10",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q11",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q12",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q13",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q14",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q15",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q16",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q17",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q18",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q19",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q20",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q21",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q22",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q23",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q24",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q25",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q26",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q27",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q28",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q29",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q30",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q31",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q32",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      },
+      {
+        "question_id": "Q33",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_verified"
+      }
+    ]
+  },
+  {
+    "system": "ours_no_gate",
+    "file": "ours_no_gate.jsonl",
+    "questions": 33,
+    "answer_accuracy_%": 100.0,
+    "answer_key_questions": 33,
+    "answer_accuracy_scale_profitability_%": 100.0,
+    "strict_accuracy_%": 100.0,
+    "number_accuracy_%": 100.0,
+    "numbers_checked": 394,
+    "right_source_%": 100.0,
+    "sources_checked": 125,
+    "grounded_numbers_%": 100.0,
+    "numbers_stated": 394,
+    "claims_with_sources_%": 99.5,
+    "claims": 192,
+    "median_latency_ms": 14807.9,
+    "not_understood": 0,
+    "ai_fell_back_to_code": 0,
+    "per_question": [
+      {
+        "question_id": "Q01",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q02",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q03",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q04",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q05",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q06",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q07",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q08",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q09",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q10",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q11",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q12",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q13",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q14",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q15",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q16",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q17",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q18",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q19",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q20",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q21",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q22",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q23",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q24",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q25",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q26",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q27",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q28",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q29",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q30",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q31",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q32",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      },
+      {
+        "question_id": "Q33",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "ai_unchecked"
+      }
+    ]
+  },
+  {
+    "system": "top_ai",
+    "file": "top_ai.jsonl",
+    "questions": 33,
+    "answer_accuracy_%": 66.7,
+    "answer_key_questions": 33,
+    "answer_accuracy_scale_profitability_%": 100.0,
+    "strict_accuracy_%": 66.7,
+    "number_accuracy_%": 100.0,
+    "numbers_checked": 350,
+    "right_source_%": 100.0,
+    "sources_checked": 175,
+    "grounded_numbers_%": 100.0,
+    "numbers_stated": 350,
+    "claims_with_sources_%": null,
+    "claims": 0,
+    "median_latency_ms": 11727.3,
+    "not_understood": 0,
+    "ai_fell_back_to_code": 0,
+    "per_question": [
+      {
+        "question_id": "Q01",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q02",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q03",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q04",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q05",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q06",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q07",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q08",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q09",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q10",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q11",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q12",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q13",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q14",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q15",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q16",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q17",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q18",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q19",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q20",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q21",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q22",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q23",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q24",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q25",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q26",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q27",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q28",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q29",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q30",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q31",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q32",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "top_ai_manual"
+      },
+      {
+        "question_id": "Q33",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "top_ai_manual"
+      }
+    ]
+  },
+  {
+    "system": "weak_ai",
+    "file": "weak_ai.jsonl",
+    "questions": 33,
+    "answer_accuracy_%": 66.7,
+    "answer_key_questions": 33,
+    "answer_accuracy_scale_profitability_%": 100.0,
+    "strict_accuracy_%": 66.7,
+    "number_accuracy_%": 100.0,
+    "numbers_checked": 400,
+    "right_source_%": 100.0,
+    "sources_checked": 225,
+    "grounded_numbers_%": 100.0,
+    "numbers_stated": 400,
+    "claims_with_sources_%": null,
+    "claims": 0,
+    "median_latency_ms": 8000.0,
+    "not_understood": 0,
+    "ai_fell_back_to_code": 0,
+    "per_question": [
+      {
+        "question_id": "Q01",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q02",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q03",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q04",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q05",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q06",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q07",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q08",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q09",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q10",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q11",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q12",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q13",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q14",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q15",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q16",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q17",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q18",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q19",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q20",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q21",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q22",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q23",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q24",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q25",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q26",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q27",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q28",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q29",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q30",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q31",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q32",
+        "answer_correct": true,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": true,
+        "status": "weak_ai_manual"
+      },
+      {
+        "question_id": "Q33",
+        "answer_correct": false,
+        "numbers_correct": true,
+        "sources_correct": true,
+        "strict_correct": false,
+        "status": "weak_ai_manual"
+      }
+    ]
+  }
+]

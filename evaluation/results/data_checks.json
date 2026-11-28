@@ -1,0 +1,144 @@
+{
+  "identities": {
+    "AAPL": {
+      "gross_profit_identity": 0.0,
+      "operating_income_identity": 0.0,
+      "eps_identity": 0.067
+    },
+    "MSFT": {
+      "gross_profit_identity": 0.0,
+      "operating_income_identity": 0.0,
+      "eps_identity": 0.009
+    },
+    "NVDA": {
+      "gross_profit_identity": 0.0,
+      "operating_income_identity": 0.0,
+      "eps_identity": 0.06
+    },
+    "AVGO": {
+      "gross_profit_identity": 0.0,
+      "operating_income_identity": 0.0,
+      "eps_identity": 0.099
+    },
+    "CSCO": {
+      "gross_profit_identity": 0.0,
+      "operating_income_identity": 0.0,
+      "eps_identity": 0.146
+    }
+  },
+  "segment_sum": {
+    "AAPL": {
+      "ticker": "AAPL",
+      "fiscal_year": 2025,
+      "check": "segment_sum_to_total",
+      "total_unit_id": "2d42611d782b506c",
+      "total": 416161000000.0,
+      "segment_sum": 416161000000.0,
+      "gap": 0.0,
+      "status": "passed",
+      "n_segments": 2,
+      "segment_rows": [
+        "Services (109,158M)",
+        "Products (307,003M)"
+      ]
+    },
+    "MSFT": {
+      "ticker": "MSFT",
+      "fiscal_year": 2025,
+      "check": "segment_sum_to_total",
+      "total_unit_id": "c239e72f18df7417",
+      "total": 281724000000.0,
+      "segment_sum": 281724000000.0,
+      "gap": 0.0,
+      "status": "passed",
+      "n_segments": 2,
+      "segment_rows": [
+        "Product (63,946M)",
+        "Service and other (217,778M)"
+      ]
+    },
+    "NVDA": {
+      "ticker": "NVDA",
+      "fiscal_year": 2025,
+      "check": "segment_sum_to_total",
+      "total_unit_id": "6ad85f27a64b77b6",
+      "total": 130497000000.0,
+      "segment_sum": 130497000000.0,
+      "gap": 0.0,
+      "status": "passed",
+      "n_segments": 2,
+      "segment_rows": [
+        "Revenue (14,304M)",
+        "Revenue (116,193M)"
+      ]
+    },
+    "AVGO": {
+      "ticker": "AVGO",
+      "fiscal_year": 2025,
+      "check": "segment_sum_to_total",
+      "total_unit_id": "7dc418a3ecb4c773",
+      "total": 63887000000.0,
+      "segment_sum": 63887000000.0,
+      "gap": 0.0,
+      "status": "passed",
+      "n_segments": 2,
+      "segment_rows": [
+        "Subscriptions and services (19,040M)",
+        "Products (44,847M)"
+      ]
+    },
+    "CSCO": {
+      "ticker": "CSCO",
+      "fiscal_year": 2025,
+      "check": "segment_sum_to_total",
+      "total_unit_id": "3817c7a8c6dea5e7",
+      "total": 56654000000.0,
+      "segment_sum": 56654000000.0,
+      "gap": 0.0,
+      "status": "passed",
+      "n_segments": 2,
+      "segment_rows": [
+        "Services (15,046M)",
+        "Product (41,608M)"
+      ]
+    }
+  },
+  "source_page_share": {
+    "AAPL": 67.8,
+    "MSFT": 55.3,
+    "NVDA": 69.8,
+    "AVGO": 72.2,
+    "CSCO": 67.8
+  },
+  "coverage": {
+    "Scale": {
+      "AAPL": "9/13",
+      "MSFT": "9/13",
+      "NVDA": "9/13",
+      "AVGO": "9/13",
+      "CSCO": "9/13"
+    },
+    "Profitability": {
+      "AAPL": "12/12",
+      "MSFT": "10/12",
+      "NVDA": "12/12",
+      "AVGO": "9/12",
+      "CSCO": "10/12"
+    },
+    "Operating efficiency": {
+      "AAPL": "8/8",
+      "MSFT": "8/8",
+      "NVDA": "5/8",
+      "AVGO": "7/8",
+      "CSCO": "8/8"
+    }
+  },
+  "duplicates": {
+    "AAPL": 17,
+    "MSFT": 0,
+    "NVDA": 17,
+    "AVGO": 20,
+    "CSCO": 18
+  },
+  "source_page_share_used_in_answers": 100.0
+}
