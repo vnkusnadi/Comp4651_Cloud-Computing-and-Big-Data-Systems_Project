@@ -20,10 +20,16 @@ from airflow.operators.python import PythonOperator
 
 # Imported from /opt/airflow/pipeline.py, mounted via docker-compose.yml.
 from pipeline import (
+    FISCAL_YEARS,
     TICKERS,
     TARGET_FISCAL_YEAR,
     build_evidence_units_for_company,
 )
+
+
+def _partial_name(ticker: str, fiscal_year: int) -> str:
+    # Single-year runs keep the original file name (AAPL.json).
+    return f"{ticker}.json" if FISCAL_YEARS == [TARGET_FISCAL_YEAR] else f"{ticker}_{fiscal_year}.json"
 
 # Absolute path inside the container; maps to ./data on the host.
 OUTPUT_DIR = "/opt/airflow/data/evidence_units"
@@ -43,7 +49,7 @@ def _build_for_ticker(ticker: str, fiscal_year: int, **context):
     print(f"[{ticker}] Stage 3 start (FY{fiscal_year})")
     units = build_evidence_units_for_company(ticker, fiscal_year=fiscal_year)
 
-    partial_path = Path(PARTIALS_DIR) / f"{ticker}.json"
+    partial_path = Path(PARTIALS_DIR) / _partial_name(ticker, fiscal_year)
     partial_path.parent.mkdir(parents=True, exist_ok=True)
     partial_path.write_text(
         json.dumps([u.to_dict() for u in units], default=str),
@@ -62,15 +68,16 @@ def _consolidate(tickers: list, fiscal_year: int, **context):
     build task silently didn't run).
     """
     partials = Path(PARTIALS_DIR)
-    missing = [t for t in tickers if not (partials / f"{t}.json").exists()]
+    names = [_partial_name(t, fy) for fy in FISCAL_YEARS for t in tickers]
+    missing = [n for n in names if not (partials / n).exists()]
     if missing:
         raise RuntimeError(f"Missing partials for: {missing}")
 
     all_units = []
-    for ticker in tickers:
-        units = json.loads((partials / f"{ticker}.json").read_text(encoding="utf-8"))
+    for name in names:
+        units = json.loads((partials / name).read_text(encoding="utf-8"))
         all_units.extend(units)
-        print(f"[{ticker}] loaded {len(units)} units")
+        print(f"[{name}] loaded {len(units)} units")
 
     out_dir = Path(OUTPUT_DIR)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -99,14 +106,16 @@ def _consolidate(tickers: list, fiscal_year: int, **context):
         rnd = df[(df.ticker == ticker) & (df.metric == "ResearchAndDevelopmentExpense")
                  & (df.mapping_method == "xbrl_tag")
                  & (df.validation_status == "passed")]
-        if len(rev) != 1:
+        # one passed total per (company, year)
+        n_years = len(FISCAL_YEARS)
+        if len(rev) != n_years:
             raise RuntimeError(
-                f"{ticker}: expected 1 passed xbrl_tag Revenue_total, "
+                f"{ticker}: expected {n_years} passed xbrl_tag Revenue_total, "
                 f"got {len(rev)}"
             )
-        if len(rnd) != 1:
+        if len(rnd) != n_years:
             raise RuntimeError(
-                f"{ticker}: expected 1 passed xbrl_tag R&D_expense, "
+                f"{ticker}: expected {n_years} passed xbrl_tag R&D_expense, "
                 f"got {len(rnd)}"
             )
         # Per-ticker rejection count: each company must have rejected at
@@ -157,17 +166,19 @@ with DAG(
 ) as dag:
 
     build_tasks = []
-    for ticker in TICKERS:
-        build_tasks.append(
-            PythonOperator(
-                task_id=f"build_units_{ticker.lower()}",
-                python_callable=_build_for_ticker,
-                op_kwargs={
-                    "ticker": ticker,
-                    "fiscal_year": TARGET_FISCAL_YEAR,
-                },
+    for fy in FISCAL_YEARS:                      # map: one task per (company, year)
+        for ticker in TICKERS:
+            suffix = "" if FISCAL_YEARS == [TARGET_FISCAL_YEAR] else f"_fy{fy}"
+            build_tasks.append(
+                PythonOperator(
+                    task_id=f"build_units_{ticker.lower()}{suffix}",
+                    python_callable=_build_for_ticker,
+                    op_kwargs={
+                        "ticker": ticker,
+                        "fiscal_year": fy,
+                    },
+                )
             )
-        )
 
     consolidate = PythonOperator(
         task_id="consolidate_and_write",

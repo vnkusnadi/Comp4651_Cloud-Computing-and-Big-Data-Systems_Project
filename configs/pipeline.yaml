@@ -1,0 +1,31 @@
+# configs/pipeline.yaml — pipeline wiring (v0.1)
+# All paths are relative to the repository root.
+version: 0.1
+
+sector_config: configs/sectors/information_technology.yaml
+
+input:
+  # Person A's canonical outputs (Stage 1–3)
+  evidence_units: data_ingestion_and_processing/data/evidence_units/evidence_units.jsonl
+  evidence_units_parquet: data_ingestion_and_processing/data/evidence_units/evidence_units.parquet
+  filing_index: data_ingestion_and_processing/data/filing_index.csv
+
+output:
+  mappings: data/mappings.jsonl                    # Stage 4  (unit_id → concept)
+  rejected_mappings: data/rejected_mappings.jsonl  # Stage 4  (kept with reason)
+  embedding_candidates: data/embedding_candidates.jsonl  # Stage 4b (proposals + verification)
+  alignment_edges: data/alignment_edges.jsonl      # Stage 5  (cross-company edges)
+  validation_report: data/validation_report.jsonl  # Stage 5  (constraint checks)
+
+mapping:                                  # Stage 4 — Person B
+  priority: [xbrl_tag, exact_label, normalized_label]
+  embedding_fallback: candidate_only      # embedding never accepted on its own
+  min_embedding_score: 0.75
+
+alignment:                                # Stage 5 — Person B
+  tolerance: 0.02
+  group_by: [sector, concept, fiscal_year]
+
+# TODO(integration): Person A's slice still lives under
+# data_ingestion_and_processing/; migrate it into dags/ + src/ (spec §4.1)
+# in a later integration pass.

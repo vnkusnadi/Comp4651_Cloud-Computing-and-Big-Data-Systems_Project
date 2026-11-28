@@ -1,0 +1,25 @@
+question_id,read_as,correct,why
+N01,Scale category,yes,
+N02,single number (revenue),no,"asked about profit as a share of revenue (margin), answered revenue"
+N03,single numbers (revenue; R&D),no,"asked R&D as a share of revenue; gave the two raw numbers, not the share"
+N04,Scale category,yes,
+N05,Profitability category,yes,
+N06,single number (revenue),no,"asked marketing and admin spend as a % of sales; answered revenue"
+N07,single numbers (net margin; return on equity),yes,
+N08,single number (total assets),yes,
+N09,single numbers (revenue; R&D),no,"asked R&D as % of revenue; gave raw numbers, not the share"
+N10,single numbers (operating margin; revenue),yes,
+N11,single number (net income),yes,
+N12,single numbers (revenue; selling and marketing),no,"asked SG&A to revenue; gave raw numbers, not the share"
+N13,single numbers (total assets; revenue),yes,
+N14,Profitability category,yes,
+N15,single number (R&D share of revenue),yes,
+N16,single numbers (net income; revenue),yes,
+N17,single number (return on assets),yes,
+N18,single numbers (general and admin; revenue),no,"asked SG&A relative to revenue; gave raw G&A only"
+N19,Scale category,yes,
+N20,Profitability category,yes,
+N21,not understood,no,"""spend on inventing new things"" (R&D) was not recognised"
+N22,Scale category,yes,
+N23,Profitability category,yes,
+N24,not understood,no,"""advertising and offices"" (SG&A) was not recognised"

@@ -1,0 +1,11 @@
+[
+  {
+    "system": "code_only",
+    "questions": 10,
+    "winner_right_%": 100.0,
+    "numbers_right_%": 100.0,
+    "numbers_checked": 40,
+    "pages_right_%": 100.0,
+    "median_latency_ms": 19.2
+  }
+]

@@ -1,0 +1,1081 @@
+[
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2020,
+    "units": 186,
+    "seconds": 2.55
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2020,
+    "units": 187,
+    "seconds": 7.48
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2020,
+    "units": 145,
+    "seconds": 2.71
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2020,
+    "units": 132,
+    "seconds": 3.35
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2020,
+    "units": 200,
+    "seconds": 7.07
+  },
+  {
+    "ticker": "ORCL",
+    "fiscal_year": 2020,
+    "units": 152,
+    "seconds": 6.08
+  },
+  {
+    "ticker": "CRM",
+    "fiscal_year": 2020,
+    "units": 133,
+    "seconds": 3.05
+  },
+  {
+    "ticker": "ADBE",
+    "fiscal_year": 2020,
+    "units": 145,
+    "seconds": 2.96
+  },
+  {
+    "ticker": "AMD",
+    "fiscal_year": 2020,
+    "units": 143,
+    "seconds": 1.64
+  },
+  {
+    "ticker": "ACN",
+    "fiscal_year": 2020,
+    "units": 132,
+    "seconds": 3.49
+  },
+  {
+    "ticker": "IBM",
+    "fiscal_year": 2020,
+    "units": 31,
+    "seconds": 1.33
+  },
+  {
+    "ticker": "INTU",
+    "fiscal_year": 2020,
+    "units": 158,
+    "seconds": 6.62
+  },
+  {
+    "ticker": "QCOM",
+    "fiscal_year": 2020,
+    "units": 143,
+    "seconds": 2.5
+  },
+  {
+    "ticker": "TXN",
+    "fiscal_year": 2020,
+    "units": 143,
+    "seconds": 1.99
+  },
+  {
+    "ticker": "AMAT",
+    "fiscal_year": 2020,
+    "units": 198,
+    "seconds": 4.18
+  },
+  {
+    "ticker": "NOW",
+    "fiscal_year": 2020,
+    "units": 127,
+    "seconds": 2.52
+  },
+  {
+    "ticker": "MU",
+    "fiscal_year": 2020,
+    "units": 164,
+    "seconds": 2.73
+  },
+  {
+    "ticker": "LRCX",
+    "fiscal_year": 2020,
+    "units": 122,
+    "seconds": 4.48
+  },
+  {
+    "ticker": "ADI",
+    "fiscal_year": 2020,
+    "units": 165,
+    "seconds": 2.94
+  },
+  {
+    "ticker": "KLAC",
+    "fiscal_year": 2020,
+    "units": 172,
+    "seconds": 3.61
+  },
+  {
+    "ticker": "PANW",
+    "fiscal_year": 2020,
+    "units": 120,
+    "seconds": 4.42
+  },
+  {
+    "ticker": "SNPS",
+    "fiscal_year": 2020,
+    "units": 121,
+    "seconds": 5.46
+  },
+  {
+    "ticker": "CDNS",
+    "fiscal_year": 2020,
+    "error": "CDNS: no 10-K with reportDate year == 2020 found"
+  },
+  {
+    "ticker": "ANET",
+    "fiscal_year": 2020,
+    "units": 133,
+    "seconds": 2.48
+  },
+  {
+    "ticker": "INTC",
+    "fiscal_year": 2020,
+    "units": 174,
+    "seconds": 5.36
+  },
+  {
+    "ticker": "FTNT",
+    "fiscal_year": 2020,
+    "units": 178,
+    "seconds": 3.14
+  },
+  {
+    "ticker": "MSI",
+    "fiscal_year": 2020,
+    "units": 206,
+    "seconds": 5.21
+  },
+  {
+    "ticker": "APH",
+    "fiscal_year": 2020,
+    "units": 203,
+    "seconds": 4.85
+  },
+  {
+    "ticker": "ADSK",
+    "fiscal_year": 2020,
+    "units": 182,
+    "seconds": 4.85
+  },
+  {
+    "ticker": "HPQ",
+    "fiscal_year": 2020,
+    "units": 175,
+    "seconds": 4.86
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2021,
+    "units": 158,
+    "seconds": 2.01
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2021,
+    "units": 179,
+    "seconds": 8.9
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2021,
+    "units": 139,
+    "seconds": 2.04
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2021,
+    "units": 133,
+    "seconds": 3.17
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2021,
+    "units": 180,
+    "seconds": 3.71
+  },
+  {
+    "ticker": "ORCL",
+    "fiscal_year": 2021,
+    "units": 152,
+    "seconds": 7.39
+  },
+  {
+    "ticker": "CRM",
+    "fiscal_year": 2021,
+    "units": 122,
+    "seconds": 3.46
+  },
+  {
+    "ticker": "ADBE",
+    "fiscal_year": 2021,
+    "units": 124,
+    "seconds": 2.72
+  },
+  {
+    "ticker": "AMD",
+    "fiscal_year": 2021,
+    "units": 132,
+    "seconds": 1.59
+  },
+  {
+    "ticker": "ACN",
+    "fiscal_year": 2021,
+    "units": 129,
+    "seconds": 3.42
+  },
+  {
+    "ticker": "IBM",
+    "fiscal_year": 2021,
+    "units": 31,
+    "seconds": 1.43
+  },
+  {
+    "ticker": "INTU",
+    "fiscal_year": 2021,
+    "units": 165,
+    "seconds": 3.94
+  },
+  {
+    "ticker": "QCOM",
+    "fiscal_year": 2021,
+    "units": 113,
+    "seconds": 2.21
+  },
+  {
+    "ticker": "TXN",
+    "fiscal_year": 2021,
+    "units": 135,
+    "seconds": 2.26
+  },
+  {
+    "ticker": "AMAT",
+    "fiscal_year": 2021,
+    "units": 191,
+    "seconds": 3.56
+  },
+  {
+    "ticker": "NOW",
+    "fiscal_year": 2021,
+    "units": 117,
+    "seconds": 3.07
+  },
+  {
+    "ticker": "MU",
+    "fiscal_year": 2021,
+    "units": 172,
+    "seconds": 2.2
+  },
+  {
+    "ticker": "LRCX",
+    "fiscal_year": 2021,
+    "units": 126,
+    "seconds": 3.94
+  },
+  {
+    "ticker": "ADI",
+    "fiscal_year": 2021,
+    "units": 149,
+    "seconds": 3.93
+  },
+  {
+    "ticker": "KLAC",
+    "fiscal_year": 2021,
+    "units": 179,
+    "seconds": 3.34
+  },
+  {
+    "ticker": "PANW",
+    "fiscal_year": 2021,
+    "units": 101,
+    "seconds": 2.95
+  },
+  {
+    "ticker": "SNPS",
+    "fiscal_year": 2021,
+    "units": 142,
+    "seconds": 2.98
+  },
+  {
+    "ticker": "CDNS",
+    "fiscal_year": 2021,
+    "units": 126,
+    "seconds": 2.73
+  },
+  {
+    "ticker": "ANET",
+    "fiscal_year": 2021,
+    "units": 102,
+    "seconds": 2.49
+  },
+  {
+    "ticker": "INTC",
+    "fiscal_year": 2021,
+    "units": 180,
+    "seconds": 4.62
+  },
+  {
+    "ticker": "FTNT",
+    "fiscal_year": 2021,
+    "units": 115,
+    "seconds": 2.11
+  },
+  {
+    "ticker": "MSI",
+    "fiscal_year": 2021,
+    "units": 197,
+    "seconds": 4.88
+  },
+  {
+    "ticker": "APH",
+    "fiscal_year": 2021,
+    "units": 195,
+    "seconds": 5.64
+  },
+  {
+    "ticker": "ADSK",
+    "fiscal_year": 2021,
+    "units": 178,
+    "seconds": 2.79
+  },
+  {
+    "ticker": "HPQ",
+    "fiscal_year": 2021,
+    "units": 178,
+    "seconds": 4.04
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2022,
+    "units": 156,
+    "seconds": 1.95
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2022,
+    "units": 175,
+    "seconds": 8.64
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2022,
+    "units": 131,
+    "seconds": 3.0
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2022,
+    "units": 128,
+    "seconds": 3.03
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2022,
+    "units": 185,
+    "seconds": 5.86
+  },
+  {
+    "ticker": "ORCL",
+    "fiscal_year": 2022,
+    "units": 150,
+    "seconds": 7.13
+  },
+  {
+    "ticker": "CRM",
+    "fiscal_year": 2022,
+    "units": 123,
+    "seconds": 2.89
+  },
+  {
+    "ticker": "ADBE",
+    "fiscal_year": 2022,
+    "units": 124,
+    "seconds": 2.32
+  },
+  {
+    "ticker": "AMD",
+    "fiscal_year": 2022,
+    "units": 141,
+    "seconds": 2.28
+  },
+  {
+    "ticker": "ACN",
+    "fiscal_year": 2022,
+    "units": 129,
+    "seconds": 3.65
+  },
+  {
+    "ticker": "IBM",
+    "fiscal_year": 2022,
+    "units": 31,
+    "seconds": 1.07
+  },
+  {
+    "ticker": "INTU",
+    "fiscal_year": 2022,
+    "units": 153,
+    "seconds": 3.86
+  },
+  {
+    "ticker": "QCOM",
+    "fiscal_year": 2022,
+    "units": 111,
+    "seconds": 2.29
+  },
+  {
+    "ticker": "TXN",
+    "fiscal_year": 2022,
+    "units": 159,
+    "seconds": 2.77
+  },
+  {
+    "ticker": "AMAT",
+    "fiscal_year": 2022,
+    "units": 187,
+    "seconds": 3.91
+  },
+  {
+    "ticker": "NOW",
+    "fiscal_year": 2022,
+    "units": 123,
+    "seconds": 2.07
+  },
+  {
+    "ticker": "MU",
+    "fiscal_year": 2022,
+    "units": 172,
+    "seconds": 2.24
+  },
+  {
+    "ticker": "LRCX",
+    "fiscal_year": 2022,
+    "units": 122,
+    "seconds": 2.38
+  },
+  {
+    "ticker": "ADI",
+    "fiscal_year": 2022,
+    "units": 146,
+    "seconds": 2.52
+  },
+  {
+    "ticker": "KLAC",
+    "fiscal_year": 2022,
+    "units": 166,
+    "seconds": 3.45
+  },
+  {
+    "ticker": "PANW",
+    "fiscal_year": 2022,
+    "units": 101,
+    "seconds": 2.82
+  },
+  {
+    "ticker": "SNPS",
+    "fiscal_year": 2022,
+    "units": 136,
+    "seconds": 2.28
+  },
+  {
+    "ticker": "CDNS",
+    "fiscal_year": 2022,
+    "units": 123,
+    "seconds": 3.05
+  },
+  {
+    "ticker": "ANET",
+    "fiscal_year": 2022,
+    "units": 99,
+    "seconds": 2.24
+  },
+  {
+    "ticker": "INTC",
+    "fiscal_year": 2022,
+    "units": 148,
+    "seconds": 4.67
+  },
+  {
+    "ticker": "FTNT",
+    "fiscal_year": 2022,
+    "units": 114,
+    "seconds": 2.26
+  },
+  {
+    "ticker": "MSI",
+    "fiscal_year": 2022,
+    "units": 197,
+    "seconds": 3.66
+  },
+  {
+    "ticker": "APH",
+    "fiscal_year": 2022,
+    "units": 199,
+    "seconds": 5.4
+  },
+  {
+    "ticker": "ADSK",
+    "fiscal_year": 2022,
+    "units": 164,
+    "seconds": 3.17
+  },
+  {
+    "ticker": "HPQ",
+    "fiscal_year": 2022,
+    "units": 174,
+    "seconds": 4.05
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2023,
+    "units": 156,
+    "seconds": 1.71
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2023,
+    "units": 184,
+    "seconds": 7.85
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2023,
+    "units": 132,
+    "seconds": 2.42
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2023,
+    "units": 129,
+    "seconds": 2.74
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2023,
+    "units": 186,
+    "seconds": 5.03
+  },
+  {
+    "ticker": "ORCL",
+    "fiscal_year": 2023,
+    "units": 155,
+    "seconds": 4.69
+  },
+  {
+    "ticker": "CRM",
+    "fiscal_year": 2023,
+    "units": 127,
+    "seconds": 2.73
+  },
+  {
+    "ticker": "ADBE",
+    "fiscal_year": 2023,
+    "units": 136,
+    "seconds": 2.3
+  },
+  {
+    "ticker": "AMD",
+    "fiscal_year": 2023,
+    "units": 144,
+    "seconds": 1.96
+  },
+  {
+    "ticker": "ACN",
+    "fiscal_year": 2023,
+    "units": 129,
+    "seconds": 3.19
+  },
+  {
+    "ticker": "IBM",
+    "fiscal_year": 2023,
+    "units": 31,
+    "seconds": 1.44
+  },
+  {
+    "ticker": "INTU",
+    "fiscal_year": 2023,
+    "units": 156,
+    "seconds": 4.04
+  },
+  {
+    "ticker": "QCOM",
+    "fiscal_year": 2023,
+    "units": 108,
+    "seconds": 2.14
+  },
+  {
+    "ticker": "TXN",
+    "fiscal_year": 2023,
+    "units": 138,
+    "seconds": 2.36
+  },
+  {
+    "ticker": "AMAT",
+    "fiscal_year": 2023,
+    "units": 171,
+    "seconds": 3.08
+  },
+  {
+    "ticker": "NOW",
+    "fiscal_year": 2023,
+    "units": 121,
+    "seconds": 2.09
+  },
+  {
+    "ticker": "MU",
+    "fiscal_year": 2023,
+    "units": 178,
+    "seconds": 3.05
+  },
+  {
+    "ticker": "LRCX",
+    "fiscal_year": 2023,
+    "units": 120,
+    "seconds": 2.07
+  },
+  {
+    "ticker": "ADI",
+    "fiscal_year": 2023,
+    "units": 142,
+    "seconds": 3.09
+  },
+  {
+    "ticker": "KLAC",
+    "fiscal_year": 2023,
+    "units": 166,
+    "seconds": 3.26
+  },
+  {
+    "ticker": "PANW",
+    "fiscal_year": 2023,
+    "units": 101,
+    "seconds": 2.91
+  },
+  {
+    "ticker": "SNPS",
+    "fiscal_year": 2023,
+    "units": 148,
+    "seconds": 2.62
+  },
+  {
+    "ticker": "CDNS",
+    "fiscal_year": 2023,
+    "units": 121,
+    "seconds": 2.36
+  },
+  {
+    "ticker": "ANET",
+    "fiscal_year": 2023,
+    "units": 102,
+    "seconds": 1.93
+  },
+  {
+    "ticker": "INTC",
+    "fiscal_year": 2023,
+    "units": 136,
+    "seconds": 4.4
+  },
+  {
+    "ticker": "FTNT",
+    "fiscal_year": 2023,
+    "units": 116,
+    "seconds": 2.22
+  },
+  {
+    "ticker": "MSI",
+    "fiscal_year": 2023,
+    "units": 197,
+    "seconds": 3.66
+  },
+  {
+    "ticker": "APH",
+    "fiscal_year": 2023,
+    "units": 196,
+    "seconds": 4.69
+  },
+  {
+    "ticker": "ADSK",
+    "fiscal_year": 2023,
+    "units": 176,
+    "seconds": 3.08
+  },
+  {
+    "ticker": "HPQ",
+    "fiscal_year": 2023,
+    "units": 161,
+    "seconds": 3.67
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2024,
+    "units": 156,
+    "seconds": 1.43
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2024,
+    "units": 171,
+    "seconds": 6.84
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2024,
+    "units": 136,
+    "seconds": 1.84
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2024,
+    "units": 136,
+    "seconds": 3.01
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2024,
+    "units": 181,
+    "seconds": 5.17
+  },
+  {
+    "ticker": "ORCL",
+    "fiscal_year": 2024,
+    "units": 148,
+    "seconds": 5.4
+  },
+  {
+    "ticker": "CRM",
+    "fiscal_year": 2024,
+    "units": 127,
+    "seconds": 2.12
+  },
+  {
+    "ticker": "ADBE",
+    "fiscal_year": 2024,
+    "units": 136,
+    "seconds": 2.45
+  },
+  {
+    "ticker": "AMD",
+    "fiscal_year": 2024,
+    "units": 143,
+    "seconds": 2.11
+  },
+  {
+    "ticker": "ACN",
+    "fiscal_year": 2024,
+    "units": 129,
+    "seconds": 2.87
+  },
+  {
+    "ticker": "IBM",
+    "fiscal_year": 2024,
+    "units": 31,
+    "seconds": 1.96
+  },
+  {
+    "ticker": "INTU",
+    "fiscal_year": 2024,
+    "units": 156,
+    "seconds": 5.47
+  },
+  {
+    "ticker": "QCOM",
+    "fiscal_year": 2024,
+    "units": 103,
+    "seconds": 1.67
+  },
+  {
+    "ticker": "TXN",
+    "fiscal_year": 2024,
+    "units": 166,
+    "seconds": 2.9
+  },
+  {
+    "ticker": "AMAT",
+    "fiscal_year": 2024,
+    "units": 167,
+    "seconds": 2.83
+  },
+  {
+    "ticker": "NOW",
+    "fiscal_year": 2024,
+    "units": 132,
+    "seconds": 1.96
+  },
+  {
+    "ticker": "MU",
+    "fiscal_year": 2024,
+    "units": 176,
+    "seconds": 2.42
+  },
+  {
+    "ticker": "LRCX",
+    "fiscal_year": 2024,
+    "units": 111,
+    "seconds": 2.37
+  },
+  {
+    "ticker": "ADI",
+    "fiscal_year": 2024,
+    "units": 142,
+    "seconds": 3.14
+  },
+  {
+    "ticker": "KLAC",
+    "fiscal_year": 2024,
+    "units": 166,
+    "seconds": 3.43
+  },
+  {
+    "ticker": "PANW",
+    "fiscal_year": 2024,
+    "units": 117,
+    "seconds": 2.73
+  },
+  {
+    "ticker": "SNPS",
+    "fiscal_year": 2024,
+    "units": 121,
+    "seconds": 3.53
+  },
+  {
+    "ticker": "CDNS",
+    "fiscal_year": 2024,
+    "units": 130,
+    "seconds": 3.2
+  },
+  {
+    "ticker": "ANET",
+    "fiscal_year": 2024,
+    "units": 101,
+    "seconds": 2.14
+  },
+  {
+    "ticker": "INTC",
+    "fiscal_year": 2024,
+    "units": 204,
+    "seconds": 4.73
+  },
+  {
+    "ticker": "FTNT",
+    "fiscal_year": 2024,
+    "units": 128,
+    "seconds": 2.66
+  },
+  {
+    "ticker": "MSI",
+    "fiscal_year": 2024,
+    "units": 217,
+    "seconds": 4.0
+  },
+  {
+    "ticker": "APH",
+    "fiscal_year": 2024,
+    "units": 219,
+    "seconds": 4.62
+  },
+  {
+    "ticker": "ADSK",
+    "fiscal_year": 2024,
+    "units": 162,
+    "seconds": 4.4
+  },
+  {
+    "ticker": "HPQ",
+    "fiscal_year": 2024,
+    "units": 163,
+    "seconds": 4.35
+  },
+  {
+    "ticker": "AAPL",
+    "fiscal_year": 2025,
+    "units": 172,
+    "seconds": 2.04
+  },
+  {
+    "ticker": "MSFT",
+    "fiscal_year": 2025,
+    "units": 185,
+    "seconds": 6.65
+  },
+  {
+    "ticker": "NVDA",
+    "fiscal_year": 2025,
+    "units": 144,
+    "seconds": 2.26
+  },
+  {
+    "ticker": "AVGO",
+    "fiscal_year": 2025,
+    "units": 137,
+    "seconds": 3.17
+  },
+  {
+    "ticker": "CSCO",
+    "fiscal_year": 2025,
+    "units": 191,
+    "seconds": 4.24
+  },
+  {
+    "ticker": "ORCL",
+    "fiscal_year": 2025,
+    "units": 148,
+    "seconds": 6.61
+  },
+  {
+    "ticker": "CRM",
+    "fiscal_year": 2025,
+    "units": 127,
+    "seconds": 2.69
+  },
+  {
+    "ticker": "ADBE",
+    "fiscal_year": 2025,
+    "units": 161,
+    "seconds": 2.09
+  },
+  {
+    "ticker": "AMD",
+    "fiscal_year": 2025,
+    "units": 142,
+    "seconds": 2.39
+  },
+  {
+    "ticker": "ACN",
+    "fiscal_year": 2025,
+    "units": 130,
+    "seconds": 3.71
+  },
+  {
+    "ticker": "IBM",
+    "fiscal_year": 2025,
+    "units": 31,
+    "seconds": 1.19
+  },
+  {
+    "ticker": "INTU",
+    "fiscal_year": 2025,
+    "units": 172,
+    "seconds": 4.69
+  },
+  {
+    "ticker": "QCOM",
+    "fiscal_year": 2025,
+    "units": 111,
+    "seconds": 1.99
+  },
+  {
+    "ticker": "TXN",
+    "fiscal_year": 2025,
+    "units": 168,
+    "seconds": 2.07
+  },
+  {
+    "ticker": "AMAT",
+    "fiscal_year": 2025,
+    "units": 178,
+    "seconds": 2.7
+  },
+  {
+    "ticker": "NOW",
+    "fiscal_year": 2025,
+    "units": 123,
+    "seconds": 3.54
+  },
+  {
+    "ticker": "MU",
+    "fiscal_year": 2025,
+    "units": 238,
+    "seconds": 2.32
+  },
+  {
+    "ticker": "LRCX",
+    "fiscal_year": 2025,
+    "units": 121,
+    "seconds": 2.2
+  },
+  {
+    "ticker": "ADI",
+    "fiscal_year": 2025,
+    "units": 152,
+    "seconds": 2.2
+  },
+  {
+    "ticker": "KLAC",
+    "fiscal_year": 2025,
+    "units": 166,
+    "seconds": 2.88
+  },
+  {
+    "ticker": "PANW",
+    "fiscal_year": 2025,
+    "units": 114,
+    "seconds": 3.13
+  },
+  {
+    "ticker": "SNPS",
+    "fiscal_year": 2025,
+    "units": 137,
+    "seconds": 3.48
+  },
+  {
+    "ticker": "CDNS",
+    "fiscal_year": 2025,
+    "units": 130,
+    "seconds": 2.81
+  },
+  {
+    "ticker": "ANET",
+    "fiscal_year": 2025,
+    "units": 101,
+    "seconds": 1.42
+  },
+  {
+    "ticker": "INTC",
+    "fiscal_year": 2025,
+    "units": 153,
+    "seconds": 4.6
+  },
+  {
+    "ticker": "FTNT",
+    "fiscal_year": 2025,
+    "units": 143,
+    "seconds": 2.69
+  },
+  {
+    "ticker": "MSI",
+    "fiscal_year": 2025,
+    "units": 217,
+    "seconds": 3.92
+  },
+  {
+    "ticker": "APH",
+    "fiscal_year": 2025,
+    "units": 219,
+    "seconds": 5.11
+  },
+  {
+    "ticker": "ADSK",
+    "fiscal_year": 2025,
+    "units": 171,
+    "seconds": 2.32
+  },
+  {
+    "ticker": "HPQ",
+    "fiscal_year": 2025,
+    "units": 196,
+    "seconds": 4.3
+  }
+]

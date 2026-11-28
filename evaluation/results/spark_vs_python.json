@@ -1,0 +1,65 @@
+[
+  {
+    "data": "5 companies, 2025",
+    "saved_numbers": 862,
+    "python": {
+      "seconds": 0.014,
+      "alignment_edges": 355,
+      "category_bundles": 15
+    },
+    "spark_1_cores": {
+      "seconds": 2.254,
+      "seconds_with_startup": 5.854,
+      "alignment_edges": 355,
+      "category_bundles": 15
+    },
+    "spark_4_cores": {
+      "seconds": 1.754,
+      "seconds_with_startup": 2.856,
+      "alignment_edges": 355,
+      "category_bundles": 15
+    }
+  },
+  {
+    "data": "30 companies, 2020-2025",
+    "saved_numbers": 26293,
+    "python": {
+      "seconds": 0.634,
+      "alignment_edges": 84186,
+      "category_bundles": 537
+    },
+    "spark_1_cores": {
+      "seconds": 3.11,
+      "seconds_with_startup": 4.239,
+      "alignment_edges": 84186,
+      "category_bundles": 537
+    },
+    "spark_4_cores": {
+      "seconds": 2.53,
+      "seconds_with_startup": 3.673,
+      "alignment_edges": 84186,
+      "category_bundles": 537
+    }
+  },
+  {
+    "data": "30 companies, 2020-2025 x10",
+    "saved_numbers": 262930,
+    "python": {
+      "seconds": 7.276,
+      "alignment_edges": 841860,
+      "category_bundles": 5370
+    },
+    "spark_1_cores": {
+      "seconds": 18.786,
+      "seconds_with_startup": 20.359,
+      "alignment_edges": 841860,
+      "category_bundles": 5370
+    },
+    "spark_4_cores": {
+      "seconds": 10.534,
+      "seconds_with_startup": 12.094,
+      "alignment_edges": 841860,
+      "category_bundles": 5370
+    }
+  }
+]

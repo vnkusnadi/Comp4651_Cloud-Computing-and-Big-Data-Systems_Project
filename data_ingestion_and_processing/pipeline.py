@@ -5,8 +5,10 @@ Companies: AAPL, MSFT, NVDA, TSMC, ASML, AVGO, CSCO
 Fiscal year: FY2024 (10-K / 20-F)
 """
 
+import argparse
 import hashlib
 import json
+import os
 import re
 import time
 from dataclasses import dataclass, field, asdict
@@ -25,7 +27,9 @@ from urllib3.util.retry import Retry
 # 0. Configuration
 # ---------------------------------------------------------------------------
 
-SEC_USER_AGENT = "PersonA-Research/1.0 (contact@example.com)"   # SEC fair-access policy
+# SEC fair-access policy: the User-Agent must name a real contact. Set it with
+#   export SEC_USER_AGENT="Your Name your.email@example.com"
+SEC_USER_AGENT = os.environ.get("SEC_USER_AGENT", "PersonA-Research/1.0 (contact@example.com)")
 
 CIK_MAP = {
     "AAPL": "0000320193",
@@ -35,8 +39,24 @@ CIK_MAP = {
     "CSCO": "0000858877",
 }
 
+# The 5 companies above are the default (the 33-question test uses them).
 TICKERS = list(CIK_MAP.keys())
+
+# Scale-up set: 30 US-listed IT companies that file 10-Ks (CIKs from
+# https://www.sec.gov/files/company_tickers.json). Use --tickers IT30.
+CIK_MAP.update({
+    "ORCL": "0001341439", "CRM": "0001108524", "ADBE": "0000796343", "AMD": "0000002488",
+    "ACN": "0001467373", "IBM": "0000051143", "INTU": "0000896878", "QCOM": "0000804328",
+    "TXN": "0000097476", "AMAT": "0000006951", "NOW": "0001373715", "MU": "0000723125",
+    "LRCX": "0000707549", "ADI": "0000006281", "KLAC": "0000319201", "PANW": "0001327567",
+    "SNPS": "0000883241", "CDNS": "0000813672", "ANET": "0001596532", "INTC": "0000050863",
+    "FTNT": "0001262039", "MSI": "0000068505", "APH": "0000820313", "ADSK": "0000769397",
+    "HPQ": "0000047217",
+})
+IT30 = list(CIK_MAP.keys())
 TARGET_FISCAL_YEAR = 2025
+# Years to ingest (speed test with 15+ reports): SECTORVIEW_FISCAL_YEARS="2023,2024,2025"
+FISCAL_YEARS = [int(y) for y in os.environ.get("SECTORVIEW_FISCAL_YEARS", str(TARGET_FISCAL_YEAR)).split(",") if y.strip()]
 
 # Filing form types: US domestic filers use 10-K
 FORM_TYPES = {"10-K"}
@@ -190,28 +210,42 @@ def find_filing_for_year(cik: str, fiscal_year: int = TARGET_FISCAL_YEAR) -> Opt
     year of `reportDate` IS the fiscal year.
     """
     subs = fetch_submissions(cik)
-    recent = subs.get("filings", {}).get("recent", {})
+    filings = subs.get("filings", {})
+    # "recent" holds only the latest ~1,000 filings. Companies that file a lot
+    # (Microsoft, Cisco, Nvidia) push their older 10-Ks into extra pages.
+    pages = [filings.get("recent", {})]
+    older = [f["name"] for f in filings.get("files", []) if f.get("name")]
 
-    for form, acc, doc, fd, rd in zip(
-        recent.get("form", []),
-        recent.get("accessionNumber", []),
-        recent.get("primaryDocument", []),
-        recent.get("filingDate", []),
-        recent.get("reportDate", []),
-    ):
-        if form not in FORM_TYPES or not rd or not fd:
-            continue
-        if int(rd[:4]) != fiscal_year:
-            continue
-        return {
-            "accession_number": acc,
-            "primary_document": doc,
-            "form": form,
-            "filing_date": fd,
-            "report_date": rd,               # e.g. "2025-09-27" for AAPL
-            "fiscal_year": fiscal_year,      # 2025
-        }
-    return None
+    def _search(block):
+        for form, acc, doc, fd, rd in zip(
+            block.get("form", []),
+            block.get("accessionNumber", []),
+            block.get("primaryDocument", []),
+            block.get("filingDate", []),
+            block.get("reportDate", []),
+        ):
+            if form not in FORM_TYPES or not rd or not fd:
+                continue
+            if int(rd[:4]) != fiscal_year:
+                continue
+            return {
+                "accession_number": acc,
+                "primary_document": doc,
+                "form": form,
+                "filing_date": fd,
+                "report_date": rd,               # e.g. "2025-09-27" for AAPL
+                "fiscal_year": fiscal_year,      # 2025
+            }
+        return None
+
+    hit = _search(pages[0])
+    for name in older:
+        if hit:
+            break
+        resp = SESSION.get(f"https://data.sec.gov/submissions/{name}", timeout=30)
+        resp.raise_for_status()
+        hit = _search(resp.json())
+    return hit
 
 
 def download_filing_document(cik: str, accession_number: str, primary_document: str) -> bytes:
@@ -441,7 +475,35 @@ def _compute_page_map(soup) -> Dict[int, int]:
             bi += 1
         if el.name and "nonfraction" in el.name.lower():
             fact_pages[id(el)] = page
-    return fact_pages
+
+    # Use the page number printed at the foot of each page (what a reader sees
+    # in the 10-K), not the count of page breaks from the cover. They differ
+    # when the cover and contents pages carry no number (Apple, Broadcom, Cisco).
+    printed = _printed_page_numbers(all_tags, page_breaks_at)
+    return {k: printed.get(v, v) for k, v in fact_pages.items()}
+
+
+def _printed_page_numbers(all_tags, page_breaks_at: List[int]) -> Dict[int, int]:
+    """Map physical page (1-based) -> page number printed in its footer, if any."""
+    starts = [0] + [b + 1 for b in page_breaks_at]
+    ends = list(page_breaks_at) + [len(all_tags)]
+    out: Dict[int, int] = {}
+    for page, (a, b) in enumerate(zip(starts, ends), start=1):
+        tail: List[str] = []
+        for el in reversed(all_tags[a:b]):
+            if el.name in ("td", "p", "div", "span", "font") and not el.find(["td", "p", "div"]):
+                t = el.get_text(" ", strip=True)
+                if t:
+                    tail.append(t)
+                    if len(tail) >= 4:
+                        break
+        for t in tail:
+            m = re.search(r"(?:^|\|\s*)(\d{1,3})$", t)
+            # sanity: a printed number trails the physical count by a few pages
+            if m and 0 < page - int(m.group(1)) + 1 <= 12:
+                out[page] = int(m.group(1))
+                break
+    return out
 
 
 def _column_index(cell, row) -> Optional[int]:
@@ -1031,15 +1093,26 @@ def run_ingestion(
     tickers: List[str] = TICKERS,
     fiscal_year: int = TARGET_FISCAL_YEAR,
     output_dir: str = "data/evidence_units",
+    fiscal_years: Optional[List[int]] = None,
 ) -> None:
+    """Build evidence units for every (ticker, year). `fiscal_years` overrides
+    `fiscal_year` so one run can cover several years (unit_ids include the year)."""
+    years = fiscal_years or [fiscal_year]
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
     all_units: List[EvidenceUnit] = []
-    for ticker in tickers:
-        try:
-            all_units.extend(build_evidence_units_for_company(ticker, fiscal_year=fiscal_year))
-        except Exception as exc:
-            print(f"[{ticker}] FAILED: {exc}")
+    timings = []
+    for fy in years:
+        for ticker in tickers:
+            t0 = time.perf_counter()
+            try:
+                units = build_evidence_units_for_company(ticker, fiscal_year=fy)
+                all_units.extend(units)
+                timings.append({"ticker": ticker, "fiscal_year": fy, "units": len(units),
+                                "seconds": round(time.perf_counter() - t0, 2)})
+            except Exception as exc:
+                print(f"[{ticker} FY{fy}] FAILED: {exc}")
+                timings.append({"ticker": ticker, "fiscal_year": fy, "error": str(exc)[:200]})
 
     with (out / "evidence_units.jsonl").open("w", encoding="utf-8") as fh:
         for u in all_units:
@@ -1049,8 +1122,16 @@ def run_ingestion(
     if "dimensions" in df.columns:
         df["dimensions"] = df["dimensions"].apply(json.dumps)
     df.to_parquet(out / "evidence_units.parquet", index=False)
+    (out / "ingest_timings.json").write_text(json.dumps(timings, indent=2), encoding="utf-8")
     print(f"\nWrote {len(all_units)} units → {out}/evidence_units.{{jsonl,parquet}}")
 
 
 if __name__ == "__main__":
-    run_ingestion()
+    ap = argparse.ArgumentParser(description="Person A ingestion (no Airflow)")
+    ap.add_argument("--years", nargs="+", type=int, default=FISCAL_YEARS,
+                    help="fiscal years, e.g. --years 2023 2024 2025")
+    ap.add_argument("--tickers", nargs="+", default=TICKERS)
+    ap.add_argument("--out", default="data/evidence_units")
+    a = ap.parse_args()
+    tickers = IT30 if a.tickers == ["IT30"] else a.tickers
+    run_ingestion(tickers=tickers, output_dir=a.out, fiscal_years=a.years)
