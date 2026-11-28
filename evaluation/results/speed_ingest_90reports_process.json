@@ -1,0 +1,1104 @@
+[
+  {
+    "workers": 1,
+    "mode": "process",
+    "reports": 90,
+    "succeeded": 90,
+    "total_seconds": 249.76,
+    "seconds_per_report_median": 2.49,
+    "saved_numbers": 13216,
+    "per_report": [
+      {
+        "ticker": "AAPL",
+        "year": 2023,
+        "units": 156,
+        "seconds": 2.33
+      },
+      {
+        "ticker": "ACN",
+        "year": 2023,
+        "units": 129,
+        "seconds": 2.88
+      },
+      {
+        "ticker": "ADBE",
+        "year": 2023,
+        "units": 136,
+        "seconds": 2.66
+      },
+      {
+        "ticker": "ADI",
+        "year": 2023,
+        "units": 142,
+        "seconds": 2.45
+      },
+      {
+        "ticker": "ADSK",
+        "year": 2023,
+        "units": 176,
+        "seconds": 3.19
+      },
+      {
+        "ticker": "AMAT",
+        "year": 2023,
+        "units": 171,
+        "seconds": 2.6
+      },
+      {
+        "ticker": "AMD",
+        "year": 2023,
+        "units": 144,
+        "seconds": 2.14
+      },
+      {
+        "ticker": "ANET",
+        "year": 2023,
+        "units": 102,
+        "seconds": 1.72
+      },
+      {
+        "ticker": "APH",
+        "year": 2023,
+        "units": 196,
+        "seconds": 4.22
+      },
+      {
+        "ticker": "AVGO",
+        "year": 2023,
+        "units": 129,
+        "seconds": 3.47
+      },
+      {
+        "ticker": "CDNS",
+        "year": 2023,
+        "units": 121,
+        "seconds": 2.12
+      },
+      {
+        "ticker": "CRM",
+        "year": 2023,
+        "units": 127,
+        "seconds": 2.3
+      },
+      {
+        "ticker": "CSCO",
+        "year": 2023,
+        "units": 186,
+        "seconds": 3.6
+      },
+      {
+        "ticker": "FTNT",
+        "year": 2023,
+        "units": 116,
+        "seconds": 2.26
+      },
+      {
+        "ticker": "HPQ",
+        "year": 2023,
+        "units": 161,
+        "seconds": 3.22
+      },
+      {
+        "ticker": "IBM",
+        "year": 2023,
+        "units": 31,
+        "seconds": 1.31
+      },
+      {
+        "ticker": "INTC",
+        "year": 2023,
+        "units": 136,
+        "seconds": 3.81
+      },
+      {
+        "ticker": "INTU",
+        "year": 2023,
+        "units": 156,
+        "seconds": 3.94
+      },
+      {
+        "ticker": "KLAC",
+        "year": 2023,
+        "units": 166,
+        "seconds": 2.84
+      },
+      {
+        "ticker": "LRCX",
+        "year": 2023,
+        "units": 120,
+        "seconds": 2.12
+      },
+      {
+        "ticker": "MSFT",
+        "year": 2023,
+        "units": 184,
+        "seconds": 5.83
+      },
+      {
+        "ticker": "MSI",
+        "year": 2023,
+        "units": 197,
+        "seconds": 3.62
+      },
+      {
+        "ticker": "MU",
+        "year": 2023,
+        "units": 178,
+        "seconds": 2.12
+      },
+      {
+        "ticker": "NOW",
+        "year": 2023,
+        "units": 121,
+        "seconds": 1.57
+      },
+      {
+        "ticker": "NVDA",
+        "year": 2023,
+        "units": 132,
+        "seconds": 2.06
+      },
+      {
+        "ticker": "ORCL",
+        "year": 2023,
+        "units": 155,
+        "seconds": 4.92
+      },
+      {
+        "ticker": "PANW",
+        "year": 2023,
+        "units": 101,
+        "seconds": 2.43
+      },
+      {
+        "ticker": "QCOM",
+        "year": 2023,
+        "units": 108,
+        "seconds": 2.18
+      },
+      {
+        "ticker": "SNPS",
+        "year": 2023,
+        "units": 148,
+        "seconds": 2.44
+      },
+      {
+        "ticker": "TXN",
+        "year": 2023,
+        "units": 138,
+        "seconds": 1.93
+      },
+      {
+        "ticker": "AAPL",
+        "year": 2024,
+        "units": 156,
+        "seconds": 1.56
+      },
+      {
+        "ticker": "ACN",
+        "year": 2024,
+        "units": 129,
+        "seconds": 3.07
+      },
+      {
+        "ticker": "ADBE",
+        "year": 2024,
+        "units": 136,
+        "seconds": 2.04
+      },
+      {
+        "ticker": "ADI",
+        "year": 2024,
+        "units": 142,
+        "seconds": 2.41
+      },
+      {
+        "ticker": "ADSK",
+        "year": 2024,
+        "units": 162,
+        "seconds": 3.58
+      },
+      {
+        "ticker": "AMAT",
+        "year": 2024,
+        "units": 167,
+        "seconds": 2.06
+      },
+      {
+        "ticker": "AMD",
+        "year": 2024,
+        "units": 143,
+        "seconds": 2.13
+      },
+      {
+        "ticker": "ANET",
+        "year": 2024,
+        "units": 101,
+        "seconds": 1.68
+      },
+      {
+        "ticker": "APH",
+        "year": 2024,
+        "units": 219,
+        "seconds": 4.04
+      },
+      {
+        "ticker": "AVGO",
+        "year": 2024,
+        "units": 136,
+        "seconds": 2.5
+      },
+      {
+        "ticker": "CDNS",
+        "year": 2024,
+        "units": 130,
+        "seconds": 2.59
+      },
+      {
+        "ticker": "CRM",
+        "year": 2024,
+        "units": 127,
+        "seconds": 2.35
+      },
+      {
+        "ticker": "CSCO",
+        "year": 2024,
+        "units": 181,
+        "seconds": 3.42
+      },
+      {
+        "ticker": "FTNT",
+        "year": 2024,
+        "units": 128,
+        "seconds": 2.1
+      },
+      {
+        "ticker": "HPQ",
+        "year": 2024,
+        "units": 163,
+        "seconds": 3.4
+      },
+      {
+        "ticker": "IBM",
+        "year": 2024,
+        "units": 31,
+        "seconds": 1.07
+      },
+      {
+        "ticker": "INTC",
+        "year": 2024,
+        "units": 204,
+        "seconds": 4.09
+      },
+      {
+        "ticker": "INTU",
+        "year": 2024,
+        "units": 156,
+        "seconds": 3.7
+      },
+      {
+        "ticker": "KLAC",
+        "year": 2024,
+        "units": 166,
+        "seconds": 2.91
+      },
+      {
+        "ticker": "LRCX",
+        "year": 2024,
+        "units": 111,
+        "seconds": 1.89
+      },
+      {
+        "ticker": "MSFT",
+        "year": 2024,
+        "units": 171,
+        "seconds": 6.25
+      },
+      {
+        "ticker": "MSI",
+        "year": 2024,
+        "units": 217,
+        "seconds": 3.3
+      },
+      {
+        "ticker": "MU",
+        "year": 2024,
+        "units": 176,
+        "seconds": 2.24
+      },
+      {
+        "ticker": "NOW",
+        "year": 2024,
+        "units": 132,
+        "seconds": 1.75
+      },
+      {
+        "ticker": "NVDA",
+        "year": 2024,
+        "units": 136,
+        "seconds": 2.23
+      },
+      {
+        "ticker": "ORCL",
+        "year": 2024,
+        "units": 148,
+        "seconds": 4.31
+      },
+      {
+        "ticker": "PANW",
+        "year": 2024,
+        "units": 117,
+        "seconds": 2.77
+      },
+      {
+        "ticker": "QCOM",
+        "year": 2024,
+        "units": 103,
+        "seconds": 3.19
+      },
+      {
+        "ticker": "SNPS",
+        "year": 2024,
+        "units": 121,
+        "seconds": 3.01
+      },
+      {
+        "ticker": "TXN",
+        "year": 2024,
+        "units": 166,
+        "seconds": 2.76
+      },
+      {
+        "ticker": "AAPL",
+        "year": 2025,
+        "units": 172,
+        "seconds": 1.28
+      },
+      {
+        "ticker": "ACN",
+        "year": 2025,
+        "units": 130,
+        "seconds": 3.19
+      },
+      {
+        "ticker": "ADBE",
+        "year": 2025,
+        "units": 161,
+        "seconds": 2.21
+      },
+      {
+        "ticker": "ADI",
+        "year": 2025,
+        "units": 152,
+        "seconds": 2.66
+      },
+      {
+        "ticker": "ADSK",
+        "year": 2025,
+        "units": 171,
+        "seconds": 2.43
+      },
+      {
+        "ticker": "AMAT",
+        "year": 2025,
+        "units": 178,
+        "seconds": 2.48
+      },
+      {
+        "ticker": "AMD",
+        "year": 2025,
+        "units": 142,
+        "seconds": 1.69
+      },
+      {
+        "ticker": "ANET",
+        "year": 2025,
+        "units": 101,
+        "seconds": 1.93
+      },
+      {
+        "ticker": "APH",
+        "year": 2025,
+        "units": 219,
+        "seconds": 4.02
+      },
+      {
+        "ticker": "AVGO",
+        "year": 2025,
+        "units": 137,
+        "seconds": 2.66
+      },
+      {
+        "ticker": "CDNS",
+        "year": 2025,
+        "units": 130,
+        "seconds": 2.41
+      },
+      {
+        "ticker": "CRM",
+        "year": 2025,
+        "units": 127,
+        "seconds": 2.4
+      },
+      {
+        "ticker": "CSCO",
+        "year": 2025,
+        "units": 191,
+        "seconds": 3.36
+      },
+      {
+        "ticker": "FTNT",
+        "year": 2025,
+        "units": 143,
+        "seconds": 2.0
+      },
+      {
+        "ticker": "HPQ",
+        "year": 2025,
+        "units": 196,
+        "seconds": 3.37
+      },
+      {
+        "ticker": "IBM",
+        "year": 2025,
+        "units": 31,
+        "seconds": 1.25
+      },
+      {
+        "ticker": "INTC",
+        "year": 2025,
+        "units": 153,
+        "seconds": 3.87
+      },
+      {
+        "ticker": "INTU",
+        "year": 2025,
+        "units": 172,
+        "seconds": 3.58
+      },
+      {
+        "ticker": "KLAC",
+        "year": 2025,
+        "units": 166,
+        "seconds": 2.72
+      },
+      {
+        "ticker": "LRCX",
+        "year": 2025,
+        "units": 121,
+        "seconds": 1.69
+      },
+      {
+        "ticker": "MSFT",
+        "year": 2025,
+        "units": 185,
+        "seconds": 5.69
+      },
+      {
+        "ticker": "MSI",
+        "year": 2025,
+        "units": 217,
+        "seconds": 3.48
+      },
+      {
+        "ticker": "MU",
+        "year": 2025,
+        "units": 238,
+        "seconds": 2.21
+      },
+      {
+        "ticker": "NOW",
+        "year": 2025,
+        "units": 123,
+        "seconds": 2.48
+      },
+      {
+        "ticker": "NVDA",
+        "year": 2025,
+        "units": 144,
+        "seconds": 2.32
+      },
+      {
+        "ticker": "ORCL",
+        "year": 2025,
+        "units": 148,
+        "seconds": 4.16
+      },
+      {
+        "ticker": "PANW",
+        "year": 2025,
+        "units": 114,
+        "seconds": 2.11
+      },
+      {
+        "ticker": "QCOM",
+        "year": 2025,
+        "units": 111,
+        "seconds": 2.54
+      },
+      {
+        "ticker": "SNPS",
+        "year": 2025,
+        "units": 137,
+        "seconds": 2.8
+      },
+      {
+        "ticker": "TXN",
+        "year": 2025,
+        "units": 168,
+        "seconds": 2.03
+      }
+    ]
+  },
+  {
+    "workers": 4,
+    "mode": "process",
+    "reports": 90,
+    "succeeded": 90,
+    "total_seconds": 92.62,
+    "seconds_per_report_median": 2.85,
+    "saved_numbers": 13216,
+    "per_report": [
+      {
+        "ticker": "AAPL",
+        "year": 2023,
+        "units": 156,
+        "seconds": 5.49
+      },
+      {
+        "ticker": "ACN",
+        "year": 2023,
+        "units": 129,
+        "seconds": 2.95
+      },
+      {
+        "ticker": "ADBE",
+        "year": 2023,
+        "units": 136,
+        "seconds": 1.82
+      },
+      {
+        "ticker": "ADI",
+        "year": 2023,
+        "units": 142,
+        "seconds": 6.73
+      },
+      {
+        "ticker": "ADSK",
+        "year": 2023,
+        "units": 176,
+        "seconds": 2.77
+      },
+      {
+        "ticker": "AMAT",
+        "year": 2023,
+        "units": 171,
+        "seconds": 2.63
+      },
+      {
+        "ticker": "AMD",
+        "year": 2023,
+        "units": 144,
+        "seconds": 1.87
+      },
+      {
+        "ticker": "ANET",
+        "year": 2023,
+        "units": 102,
+        "seconds": 1.57
+      },
+      {
+        "ticker": "APH",
+        "year": 2023,
+        "units": 196,
+        "seconds": 4.18
+      },
+      {
+        "ticker": "AVGO",
+        "year": 2023,
+        "units": 129,
+        "seconds": 2.87
+      },
+      {
+        "ticker": "CDNS",
+        "year": 2023,
+        "units": 121,
+        "seconds": 5.86
+      },
+      {
+        "ticker": "CRM",
+        "year": 2023,
+        "units": 127,
+        "seconds": 9.39
+      },
+      {
+        "ticker": "CSCO",
+        "year": 2023,
+        "units": 186,
+        "seconds": 3.53
+      },
+      {
+        "ticker": "FTNT",
+        "year": 2023,
+        "units": 116,
+        "seconds": 2.49
+      },
+      {
+        "ticker": "HPQ",
+        "year": 2023,
+        "units": 161,
+        "seconds": 7.94
+      },
+      {
+        "ticker": "IBM",
+        "year": 2023,
+        "units": 31,
+        "seconds": 0.97
+      },
+      {
+        "ticker": "INTC",
+        "year": 2023,
+        "units": 136,
+        "seconds": 3.8
+      },
+      {
+        "ticker": "INTU",
+        "year": 2023,
+        "units": 156,
+        "seconds": 3.4
+      },
+      {
+        "ticker": "KLAC",
+        "year": 2023,
+        "units": 166,
+        "seconds": 2.86
+      },
+      {
+        "ticker": "LRCX",
+        "year": 2023,
+        "units": 120,
+        "seconds": 1.93
+      },
+      {
+        "ticker": "MSFT",
+        "year": 2023,
+        "units": 184,
+        "seconds": 15.96
+      },
+      {
+        "ticker": "MSI",
+        "year": 2023,
+        "units": 197,
+        "seconds": 7.97
+      },
+      {
+        "ticker": "MU",
+        "year": 2023,
+        "units": 178,
+        "seconds": 5.25
+      },
+      {
+        "ticker": "NOW",
+        "year": 2023,
+        "units": 121,
+        "seconds": 1.69
+      },
+      {
+        "ticker": "NVDA",
+        "year": 2023,
+        "units": 132,
+        "seconds": 2.82
+      },
+      {
+        "ticker": "ORCL",
+        "year": 2023,
+        "units": 155,
+        "seconds": 4.22
+      },
+      {
+        "ticker": "PANW",
+        "year": 2023,
+        "units": 101,
+        "seconds": 2.39
+      },
+      {
+        "ticker": "QCOM",
+        "year": 2023,
+        "units": 108,
+        "seconds": 1.98
+      },
+      {
+        "ticker": "SNPS",
+        "year": 2023,
+        "units": 148,
+        "seconds": 2.51
+      },
+      {
+        "ticker": "TXN",
+        "year": 2023,
+        "units": 138,
+        "seconds": 1.79
+      },
+      {
+        "ticker": "AAPL",
+        "year": 2024,
+        "units": 156,
+        "seconds": 1.25
+      },
+      {
+        "ticker": "ACN",
+        "year": 2024,
+        "units": 129,
+        "seconds": 2.57
+      },
+      {
+        "ticker": "ADBE",
+        "year": 2024,
+        "units": 136,
+        "seconds": 2.03
+      },
+      {
+        "ticker": "ADI",
+        "year": 2024,
+        "units": 142,
+        "seconds": 2.39
+      },
+      {
+        "ticker": "ADSK",
+        "year": 2024,
+        "units": 162,
+        "seconds": 9.82
+      },
+      {
+        "ticker": "AMAT",
+        "year": 2024,
+        "units": 167,
+        "seconds": 2.19
+      },
+      {
+        "ticker": "AMD",
+        "year": 2024,
+        "units": 143,
+        "seconds": 1.71
+      },
+      {
+        "ticker": "ANET",
+        "year": 2024,
+        "units": 101,
+        "seconds": 3.14
+      },
+      {
+        "ticker": "APH",
+        "year": 2024,
+        "units": 219,
+        "seconds": 13.98
+      },
+      {
+        "ticker": "AVGO",
+        "year": 2024,
+        "units": 136,
+        "seconds": 6.56
+      },
+      {
+        "ticker": "CDNS",
+        "year": 2024,
+        "units": 130,
+        "seconds": 2.44
+      },
+      {
+        "ticker": "CRM",
+        "year": 2024,
+        "units": 127,
+        "seconds": 2.22
+      },
+      {
+        "ticker": "CSCO",
+        "year": 2024,
+        "units": 181,
+        "seconds": 3.03
+      },
+      {
+        "ticker": "FTNT",
+        "year": 2024,
+        "units": 128,
+        "seconds": 1.97
+      },
+      {
+        "ticker": "HPQ",
+        "year": 2024,
+        "units": 163,
+        "seconds": 3.01
+      },
+      {
+        "ticker": "IBM",
+        "year": 2024,
+        "units": 31,
+        "seconds": 2.95
+      },
+      {
+        "ticker": "INTC",
+        "year": 2024,
+        "units": 204,
+        "seconds": 4.4
+      },
+      {
+        "ticker": "INTU",
+        "year": 2024,
+        "units": 156,
+        "seconds": 3.61
+      },
+      {
+        "ticker": "KLAC",
+        "year": 2024,
+        "units": 166,
+        "seconds": 8.02
+      },
+      {
+        "ticker": "LRCX",
+        "year": 2024,
+        "units": 111,
+        "seconds": 1.86
+      },
+      {
+        "ticker": "MSFT",
+        "year": 2024,
+        "units": 171,
+        "seconds": 5.8
+      },
+      {
+        "ticker": "MSI",
+        "year": 2024,
+        "units": 217,
+        "seconds": 3.63
+      },
+      {
+        "ticker": "MU",
+        "year": 2024,
+        "units": 176,
+        "seconds": 1.95
+      },
+      {
+        "ticker": "NOW",
+        "year": 2024,
+        "units": 132,
+        "seconds": 1.78
+      },
+      {
+        "ticker": "NVDA",
+        "year": 2024,
+        "units": 136,
+        "seconds": 1.89
+      },
+      {
+        "ticker": "ORCL",
+        "year": 2024,
+        "units": 148,
+        "seconds": 12.69
+      },
+      {
+        "ticker": "PANW",
+        "year": 2024,
+        "units": 117,
+        "seconds": 2.56
+      },
+      {
+        "ticker": "QCOM",
+        "year": 2024,
+        "units": 103,
+        "seconds": 1.83
+      },
+      {
+        "ticker": "SNPS",
+        "year": 2024,
+        "units": 121,
+        "seconds": 7.61
+      },
+      {
+        "ticker": "TXN",
+        "year": 2024,
+        "units": 166,
+        "seconds": 5.18
+      },
+      {
+        "ticker": "AAPL",
+        "year": 2025,
+        "units": 172,
+        "seconds": 1.58
+      },
+      {
+        "ticker": "ACN",
+        "year": 2025,
+        "units": 130,
+        "seconds": 2.85
+      },
+      {
+        "ticker": "ADBE",
+        "year": 2025,
+        "units": 161,
+        "seconds": 2.49
+      },
+      {
+        "ticker": "ADI",
+        "year": 2025,
+        "units": 152,
+        "seconds": 2.18
+      },
+      {
+        "ticker": "ADSK",
+        "year": 2025,
+        "units": 171,
+        "seconds": 7.91
+      },
+      {
+        "ticker": "AMAT",
+        "year": 2025,
+        "units": 178,
+        "seconds": 2.14
+      },
+      {
+        "ticker": "AMD",
+        "year": 2025,
+        "units": 142,
+        "seconds": 6.28
+      },
+      {
+        "ticker": "ANET",
+        "year": 2025,
+        "units": 101,
+        "seconds": 1.35
+      },
+      {
+        "ticker": "APH",
+        "year": 2025,
+        "units": 219,
+        "seconds": 3.89
+      },
+      {
+        "ticker": "AVGO",
+        "year": 2025,
+        "units": 137,
+        "seconds": 2.42
+      },
+      {
+        "ticker": "CDNS",
+        "year": 2025,
+        "units": 130,
+        "seconds": 2.51
+      },
+      {
+        "ticker": "CRM",
+        "year": 2025,
+        "units": 127,
+        "seconds": 7.5
+      },
+      {
+        "ticker": "CSCO",
+        "year": 2025,
+        "units": 191,
+        "seconds": 4.13
+      },
+      {
+        "ticker": "FTNT",
+        "year": 2025,
+        "units": 143,
+        "seconds": 2.23
+      },
+      {
+        "ticker": "HPQ",
+        "year": 2025,
+        "units": 196,
+        "seconds": 3.01
+      },
+      {
+        "ticker": "IBM",
+        "year": 2025,
+        "units": 31,
+        "seconds": 1.04
+      },
+      {
+        "ticker": "INTC",
+        "year": 2025,
+        "units": 153,
+        "seconds": 10.49
+      },
+      {
+        "ticker": "INTU",
+        "year": 2025,
+        "units": 172,
+        "seconds": 3.49
+      },
+      {
+        "ticker": "KLAC",
+        "year": 2025,
+        "units": 166,
+        "seconds": 2.81
+      },
+      {
+        "ticker": "LRCX",
+        "year": 2025,
+        "units": 121,
+        "seconds": 1.48
+      },
+      {
+        "ticker": "MSFT",
+        "year": 2025,
+        "units": 185,
+        "seconds": 5.49
+      },
+      {
+        "ticker": "MSI",
+        "year": 2025,
+        "units": 217,
+        "seconds": 3.42
+      },
+      {
+        "ticker": "MU",
+        "year": 2025,
+        "units": 238,
+        "seconds": 7.06
+      },
+      {
+        "ticker": "NOW",
+        "year": 2025,
+        "units": 123,
+        "seconds": 2.3
+      },
+      {
+        "ticker": "NVDA",
+        "year": 2025,
+        "units": 144,
+        "seconds": 1.6
+      },
+      {
+        "ticker": "ORCL",
+        "year": 2025,
+        "units": 148,
+        "seconds": 4.61
+      },
+      {
+        "ticker": "PANW",
+        "year": 2025,
+        "units": 114,
+        "seconds": 7.3
+      },
+      {
+        "ticker": "QCOM",
+        "year": 2025,
+        "units": 111,
+        "seconds": 1.47
+      },
+      {
+        "ticker": "SNPS",
+        "year": 2025,
+        "units": 137,
+        "seconds": 2.83
+      },
+      {
+        "ticker": "TXN",
+        "year": 2025,
+        "units": 168,
+        "seconds": 5.81
+      }
+    ]
+  }
+]

@@ -45,12 +45,11 @@ cd data_ingestion_and_processing && python pipeline.py --years 2023 2024 2025
 
 Evaluation steps are in [`evaluation/README.md`](evaluation/README.md).
 
-## What still needs doing
+## Known limitations
 
-- The answer key in `evaluation/` must be filled in by hand from the 10-Ks.
-- The AI verdict has only been tested with a fake AI; it needs a real run with an API key.
-- The multi-year pipeline and the Airflow changes have not been run against sec.gov yet.
-- `data_ingestion_and_processing.zip` is an old copy of the folder and can be deleted.
+- The answer key's numbers were read from the 10-K PDFs and checked against our data, not fully by hand; its verdicts use the same rule as the code.
+- The plain AI-search baseline (`evaluation/flat_rag.py`) was written but not run.
+- Cadence's FY2020 report is missing (its year ended 2 Jan 2021), and IBM's numbers have no page numbers (its statements are in an exhibit).
 
 ## Person C — retrieval, generation, UI (Stage 6–7)
 
