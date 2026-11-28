@@ -1,0 +1,3615 @@
+{
+  "changed": [
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "Revenue_total",
+      "correct": 416161000000.0,
+      "without_check": 307003000000.0,
+      "change_%": -26.2
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "Revenue_total",
+      "correct": 281724000000.0,
+      "without_check": 217778000000.0,
+      "change_%": -22.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingIncomeLoss",
+      "correct": 133050000000.0,
+      "without_check": 72480000000.0,
+      "change_%": -45.5
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingIncomeLoss",
+      "correct": 128528000000.0,
+      "without_check": 69773000000.0,
+      "change_%": -45.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "Revenue_total",
+      "correct": 416161000000.0,
+      "without_check": 307003000000.0,
+      "change_%": -26.2
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "Revenue_total",
+      "correct": 130497000000.0,
+      "without_check": 116193000000.0,
+      "change_%": -11.0
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingIncomeLoss",
+      "correct": 133050000000.0,
+      "without_check": 72480000000.0,
+      "change_%": -45.5
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingIncomeLoss",
+      "correct": 81453000000.0,
+      "without_check": 82875000000.0,
+      "change_%": 1.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "Revenue_total",
+      "correct": 416161000000.0,
+      "without_check": 307003000000.0,
+      "change_%": -26.2
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "Revenue_total",
+      "correct": 63887000000.0,
+      "without_check": 44847000000.0,
+      "change_%": -29.8
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingIncomeLoss",
+      "correct": 133050000000.0,
+      "without_check": 72480000000.0,
+      "change_%": -45.5
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingIncomeLoss",
+      "correct": 25484000000.0,
+      "without_check": 21232000000.0,
+      "change_%": -16.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "Revenue_total",
+      "correct": 416161000000.0,
+      "without_check": 307003000000.0,
+      "change_%": -26.2
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "Revenue_total",
+      "correct": 56654000000.0,
+      "without_check": 43142000000.0,
+      "change_%": -23.9
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossProfit",
+      "correct": 36790000000.0,
+      "without_check": 38938000000.0,
+      "change_%": 5.8
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingIncomeLoss",
+      "correct": 133050000000.0,
+      "without_check": 72480000000.0,
+      "change_%": -45.5
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetIncomeLoss",
+      "correct": 10180000000.0,
+      "without_check": 12613000000.0,
+      "change_%": 23.9
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "Revenue_total",
+      "correct": 281724000000.0,
+      "without_check": 217778000000.0,
+      "change_%": -22.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "Revenue_total",
+      "correct": 130497000000.0,
+      "without_check": 116193000000.0,
+      "change_%": -11.0
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingIncomeLoss",
+      "correct": 128528000000.0,
+      "without_check": 69773000000.0,
+      "change_%": -45.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingIncomeLoss",
+      "correct": 81453000000.0,
+      "without_check": 82875000000.0,
+      "change_%": 1.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "Revenue_total",
+      "correct": 281724000000.0,
+      "without_check": 217778000000.0,
+      "change_%": -22.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "Revenue_total",
+      "correct": 63887000000.0,
+      "without_check": 44847000000.0,
+      "change_%": -29.8
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingIncomeLoss",
+      "correct": 128528000000.0,
+      "without_check": 69773000000.0,
+      "change_%": -45.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingIncomeLoss",
+      "correct": 25484000000.0,
+      "without_check": 21232000000.0,
+      "change_%": -16.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "Revenue_total",
+      "correct": 281724000000.0,
+      "without_check": 217778000000.0,
+      "change_%": -22.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "Revenue_total",
+      "correct": 56654000000.0,
+      "without_check": 43142000000.0,
+      "change_%": -23.9
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossProfit",
+      "correct": 36790000000.0,
+      "without_check": 38938000000.0,
+      "change_%": 5.8
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingIncomeLoss",
+      "correct": 128528000000.0,
+      "without_check": 69773000000.0,
+      "change_%": -45.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetIncomeLoss",
+      "correct": 10180000000.0,
+      "without_check": 12613000000.0,
+      "change_%": 23.9
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "Revenue_total",
+      "correct": 130497000000.0,
+      "without_check": 116193000000.0,
+      "change_%": -11.0
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "Revenue_total",
+      "correct": 63887000000.0,
+      "without_check": 44847000000.0,
+      "change_%": -29.8
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingIncomeLoss",
+      "correct": 81453000000.0,
+      "without_check": 82875000000.0,
+      "change_%": 1.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingIncomeLoss",
+      "correct": 25484000000.0,
+      "without_check": 21232000000.0,
+      "change_%": -16.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "Revenue_total",
+      "correct": 130497000000.0,
+      "without_check": 116193000000.0,
+      "change_%": -11.0
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "Revenue_total",
+      "correct": 56654000000.0,
+      "without_check": 43142000000.0,
+      "change_%": -23.9
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossProfit",
+      "correct": 36790000000.0,
+      "without_check": 38938000000.0,
+      "change_%": 5.8
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingIncomeLoss",
+      "correct": 81453000000.0,
+      "without_check": 82875000000.0,
+      "change_%": 1.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetIncomeLoss",
+      "correct": 10180000000.0,
+      "without_check": 12613000000.0,
+      "change_%": 23.9
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "Revenue_total",
+      "correct": 63887000000.0,
+      "without_check": 44847000000.0,
+      "change_%": -29.8
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "Revenue_total",
+      "correct": 56654000000.0,
+      "without_check": 43142000000.0,
+      "change_%": -23.9
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossProfit",
+      "correct": 36790000000.0,
+      "without_check": 38938000000.0,
+      "change_%": 5.8
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingIncomeLoss",
+      "correct": 25484000000.0,
+      "without_check": 21232000000.0,
+      "change_%": -16.7
+    },
+    {
+      "category": "Scale",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetIncomeLoss",
+      "correct": 10180000000.0,
+      "without_check": 12613000000.0,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "GrossMargin",
+      "correct": 0.4690516410716045,
+      "without_check": 0.6358276629218607,
+      "change_%": 35.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "GrossMargin",
+      "correct": 0.6882374238616519,
+      "without_check": 0.8903240915060291,
+      "change_%": 29.4
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingIncomeLoss",
+      "correct": 133050000000.0,
+      "without_check": 72480000000.0,
+      "change_%": -45.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingIncomeLoss",
+      "correct": 128528000000.0,
+      "without_check": 69773000000.0,
+      "change_%": -45.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingMargin",
+      "correct": 0.31970799762591884,
+      "without_check": 0.2360888981540897,
+      "change_%": -26.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingMargin",
+      "correct": 0.4562195624085985,
+      "without_check": 0.32038589756541064,
+      "change_%": -29.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "NetMargin",
+      "correct": 0.2691506412181824,
+      "without_check": 0.3648498548874115,
+      "change_%": 35.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "NetMargin",
+      "correct": 0.3614601524896707,
+      "without_check": 0.4675954412291416,
+      "change_%": 29.4
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "ReturnOnEquity",
+      "correct": 1.5191298333175105,
+      "without_check": 1.1970972982216141,
+      "change_%": -21.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "ReturnOnEquity",
+      "correct": 0.2964722734140952,
+      "without_check": 0.4283496893547749,
+      "change_%": 44.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "EBITDA",
+      "correct": 144748000000.0,
+      "without_check": 84178000000.0,
+      "change_%": -41.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "EBITDA_margin",
+      "correct": 0.3478173110887373,
+      "without_check": 0.2741927603313323,
+      "change_%": -21.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "GrossMargin",
+      "correct": 0.4690516410716045,
+      "without_check": 0.6358276629218607,
+      "change_%": 35.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "GrossMargin",
+      "correct": 0.7498869705816992,
+      "without_check": 0.8422021980670092,
+      "change_%": 12.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingIncomeLoss",
+      "correct": 133050000000.0,
+      "without_check": 72480000000.0,
+      "change_%": -45.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingIncomeLoss",
+      "correct": 81453000000.0,
+      "without_check": 82875000000.0,
+      "change_%": 1.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingMargin",
+      "correct": 0.31970799762591884,
+      "without_check": 0.2360888981540897,
+      "change_%": -26.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingMargin",
+      "correct": 0.6241752683969747,
+      "without_check": 0.7132529498334668,
+      "change_%": 14.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "NetMargin",
+      "correct": 0.2691506412181824,
+      "without_check": 0.3648498548874115,
+      "change_%": 35.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "NetMargin",
+      "correct": 0.5584802715771244,
+      "without_check": 0.627232277331681,
+      "change_%": 12.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "ReturnOnEquity",
+      "correct": 1.5191298333175105,
+      "without_check": 1.1970972982216141,
+      "change_%": -21.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "ReturnOnEquity",
+      "correct": 0.9187288060811577,
+      "without_check": 1.0711661130544696,
+      "change_%": 16.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "EBITDA",
+      "correct": 144748000000.0,
+      "without_check": 84178000000.0,
+      "change_%": -41.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "EBITDA_margin",
+      "correct": 0.3478173110887373,
+      "without_check": 0.2741927603313323,
+      "change_%": -21.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "GrossMargin",
+      "correct": 0.4690516410716045,
+      "without_check": 0.6358276629218607,
+      "change_%": 35.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "GrossMargin",
+      "correct": 0.6776652527118193,
+      "without_check": 0.9653711508016144,
+      "change_%": 42.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingIncomeLoss",
+      "correct": 133050000000.0,
+      "without_check": 72480000000.0,
+      "change_%": -45.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingIncomeLoss",
+      "correct": 25484000000.0,
+      "without_check": 21232000000.0,
+      "change_%": -16.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingMargin",
+      "correct": 0.31970799762591884,
+      "without_check": 0.2360888981540897,
+      "change_%": -26.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingMargin",
+      "correct": 0.3988917933225852,
+      "without_check": 0.4734318906504337,
+      "change_%": 18.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "NetMargin",
+      "correct": 0.2691506412181824,
+      "without_check": 0.3648498548874115,
+      "change_%": 35.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "NetMargin",
+      "correct": 0.3619828760154648,
+      "without_check": 0.5156643699690058,
+      "change_%": 42.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "ReturnOnEquity",
+      "correct": 1.5191298333175105,
+      "without_check": 1.1970972982216141,
+      "change_%": -21.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "EBITDA",
+      "correct": 144748000000.0,
+      "without_check": 84178000000.0,
+      "change_%": -41.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "EBITDA_margin",
+      "correct": 0.3478173110887373,
+      "without_check": 0.2741927603313323,
+      "change_%": -21.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossProfit",
+      "correct": 36790000000.0,
+      "without_check": 38938000000.0,
+      "change_%": 5.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "GrossMargin",
+      "correct": 0.4690516410716045,
+      "without_check": 0.6358276629218607,
+      "change_%": 35.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossMargin",
+      "correct": 0.6493804497475907,
+      "without_check": 0.9025543553845441,
+      "change_%": 39.0
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingIncomeLoss",
+      "correct": 133050000000.0,
+      "without_check": 72480000000.0,
+      "change_%": -45.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingMargin",
+      "correct": 0.31970799762591884,
+      "without_check": 0.2360888981540897,
+      "change_%": -26.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "OperatingMargin",
+      "correct": 0.20757581106364953,
+      "without_check": 0.272588197116499,
+      "change_%": 31.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetIncomeLoss",
+      "correct": 10180000000.0,
+      "without_check": 12613000000.0,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "NetMargin",
+      "correct": 0.2691506412181824,
+      "without_check": 0.3648498548874115,
+      "change_%": 35.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetMargin",
+      "correct": 0.17968722420305716,
+      "without_check": 0.2923601131148301,
+      "change_%": 62.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "ReturnOnAssets",
+      "correct": 0.08324406538502424,
+      "without_check": 0.10313923346771225,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "ReturnOnEquity",
+      "correct": 1.5191298333175105,
+      "without_check": 1.1970972982216141,
+      "change_%": -21.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "ReturnOnEquity",
+      "correct": 0.21732169160813783,
+      "without_check": 0.264163193499068,
+      "change_%": 21.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "EBITDA",
+      "correct": 144748000000.0,
+      "without_check": 84178000000.0,
+      "change_%": -41.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "EBITDA_margin",
+      "correct": 0.3478173110887373,
+      "without_check": 0.2741927603313323,
+      "change_%": -21.2
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "GrossMargin",
+      "correct": 0.6882374238616519,
+      "without_check": 0.8903240915060291,
+      "change_%": 29.4
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "GrossMargin",
+      "correct": 0.7498869705816992,
+      "without_check": 0.8422021980670092,
+      "change_%": 12.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingIncomeLoss",
+      "correct": 128528000000.0,
+      "without_check": 69773000000.0,
+      "change_%": -45.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingIncomeLoss",
+      "correct": 81453000000.0,
+      "without_check": 82875000000.0,
+      "change_%": 1.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingMargin",
+      "correct": 0.4562195624085985,
+      "without_check": 0.32038589756541064,
+      "change_%": -29.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingMargin",
+      "correct": 0.6241752683969747,
+      "without_check": 0.7132529498334668,
+      "change_%": 14.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "NetMargin",
+      "correct": 0.3614601524896707,
+      "without_check": 0.4675954412291416,
+      "change_%": 29.4
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "NetMargin",
+      "correct": 0.5584802715771244,
+      "without_check": 0.627232277331681,
+      "change_%": 12.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "ReturnOnEquity",
+      "correct": 0.2964722734140952,
+      "without_check": 0.4283496893547749,
+      "change_%": 44.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "ReturnOnEquity",
+      "correct": 0.9187288060811577,
+      "without_check": 1.0711661130544696,
+      "change_%": 16.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "GrossMargin",
+      "correct": 0.6882374238616519,
+      "without_check": 0.8903240915060291,
+      "change_%": 29.4
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "GrossMargin",
+      "correct": 0.6776652527118193,
+      "without_check": 0.9653711508016144,
+      "change_%": 42.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingIncomeLoss",
+      "correct": 128528000000.0,
+      "without_check": 69773000000.0,
+      "change_%": -45.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingIncomeLoss",
+      "correct": 25484000000.0,
+      "without_check": 21232000000.0,
+      "change_%": -16.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingMargin",
+      "correct": 0.4562195624085985,
+      "without_check": 0.32038589756541064,
+      "change_%": -29.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingMargin",
+      "correct": 0.3988917933225852,
+      "without_check": 0.4734318906504337,
+      "change_%": 18.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "NetMargin",
+      "correct": 0.3614601524896707,
+      "without_check": 0.4675954412291416,
+      "change_%": 29.4
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "NetMargin",
+      "correct": 0.3619828760154648,
+      "without_check": 0.5156643699690058,
+      "change_%": 42.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "ReturnOnEquity",
+      "correct": 0.2964722734140952,
+      "without_check": 0.4283496893547749,
+      "change_%": 44.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossProfit",
+      "correct": 36790000000.0,
+      "without_check": 38938000000.0,
+      "change_%": 5.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "GrossMargin",
+      "correct": 0.6882374238616519,
+      "without_check": 0.8903240915060291,
+      "change_%": 29.4
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossMargin",
+      "correct": 0.6493804497475907,
+      "without_check": 0.9025543553845441,
+      "change_%": 39.0
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingIncomeLoss",
+      "correct": 128528000000.0,
+      "without_check": 69773000000.0,
+      "change_%": -45.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingMargin",
+      "correct": 0.4562195624085985,
+      "without_check": 0.32038589756541064,
+      "change_%": -29.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "OperatingMargin",
+      "correct": 0.20757581106364953,
+      "without_check": 0.272588197116499,
+      "change_%": 31.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetIncomeLoss",
+      "correct": 10180000000.0,
+      "without_check": 12613000000.0,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "NetMargin",
+      "correct": 0.3614601524896707,
+      "without_check": 0.4675954412291416,
+      "change_%": 29.4
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetMargin",
+      "correct": 0.17968722420305716,
+      "without_check": 0.2923601131148301,
+      "change_%": 62.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "ReturnOnAssets",
+      "correct": 0.08324406538502424,
+      "without_check": 0.10313923346771225,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "ReturnOnEquity",
+      "correct": 0.2964722734140952,
+      "without_check": 0.4283496893547749,
+      "change_%": 44.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "ReturnOnEquity",
+      "correct": 0.21732169160813783,
+      "without_check": 0.264163193499068,
+      "change_%": 21.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "GrossMargin",
+      "correct": 0.7498869705816992,
+      "without_check": 0.8422021980670092,
+      "change_%": 12.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "GrossMargin",
+      "correct": 0.6776652527118193,
+      "without_check": 0.9653711508016144,
+      "change_%": 42.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingIncomeLoss",
+      "correct": 81453000000.0,
+      "without_check": 82875000000.0,
+      "change_%": 1.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingIncomeLoss",
+      "correct": 25484000000.0,
+      "without_check": 21232000000.0,
+      "change_%": -16.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingMargin",
+      "correct": 0.6241752683969747,
+      "without_check": 0.7132529498334668,
+      "change_%": 14.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingMargin",
+      "correct": 0.3988917933225852,
+      "without_check": 0.4734318906504337,
+      "change_%": 18.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "NetMargin",
+      "correct": 0.5584802715771244,
+      "without_check": 0.627232277331681,
+      "change_%": 12.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "NetMargin",
+      "correct": 0.3619828760154648,
+      "without_check": 0.5156643699690058,
+      "change_%": 42.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "ReturnOnEquity",
+      "correct": 0.9187288060811577,
+      "without_check": 1.0711661130544696,
+      "change_%": 16.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossProfit",
+      "correct": 36790000000.0,
+      "without_check": 38938000000.0,
+      "change_%": 5.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "GrossMargin",
+      "correct": 0.7498869705816992,
+      "without_check": 0.8422021980670092,
+      "change_%": 12.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossMargin",
+      "correct": 0.6493804497475907,
+      "without_check": 0.9025543553845441,
+      "change_%": 39.0
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingIncomeLoss",
+      "correct": 81453000000.0,
+      "without_check": 82875000000.0,
+      "change_%": 1.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingMargin",
+      "correct": 0.6241752683969747,
+      "without_check": 0.7132529498334668,
+      "change_%": 14.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "OperatingMargin",
+      "correct": 0.20757581106364953,
+      "without_check": 0.272588197116499,
+      "change_%": 31.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetIncomeLoss",
+      "correct": 10180000000.0,
+      "without_check": 12613000000.0,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "NetMargin",
+      "correct": 0.5584802715771244,
+      "without_check": 0.627232277331681,
+      "change_%": 12.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetMargin",
+      "correct": 0.17968722420305716,
+      "without_check": 0.2923601131148301,
+      "change_%": 62.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "ReturnOnAssets",
+      "correct": 0.08324406538502424,
+      "without_check": 0.10313923346771225,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "ReturnOnEquity",
+      "correct": 0.9187288060811577,
+      "without_check": 1.0711661130544696,
+      "change_%": 16.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "ReturnOnEquity",
+      "correct": 0.21732169160813783,
+      "without_check": 0.264163193499068,
+      "change_%": 21.6
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossProfit",
+      "correct": 36790000000.0,
+      "without_check": 38938000000.0,
+      "change_%": 5.8
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "GrossMargin",
+      "correct": 0.6776652527118193,
+      "without_check": 0.9653711508016144,
+      "change_%": 42.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "GrossMargin",
+      "correct": 0.6493804497475907,
+      "without_check": 0.9025543553845441,
+      "change_%": 39.0
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingIncomeLoss",
+      "correct": 25484000000.0,
+      "without_check": 21232000000.0,
+      "change_%": -16.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingMargin",
+      "correct": 0.3988917933225852,
+      "without_check": 0.4734318906504337,
+      "change_%": 18.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "OperatingMargin",
+      "correct": 0.20757581106364953,
+      "without_check": 0.272588197116499,
+      "change_%": 31.3
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetIncomeLoss",
+      "correct": 10180000000.0,
+      "without_check": 12613000000.0,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "NetMargin",
+      "correct": 0.3619828760154648,
+      "without_check": 0.5156643699690058,
+      "change_%": 42.5
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "NetMargin",
+      "correct": 0.17968722420305716,
+      "without_check": 0.2923601131148301,
+      "change_%": 62.7
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "ReturnOnAssets",
+      "correct": 0.08324406538502424,
+      "without_check": 0.10313923346771225,
+      "change_%": 23.9
+    },
+    {
+      "category": "Profitability",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "ReturnOnEquity",
+      "correct": 0.21732169160813783,
+      "without_check": 0.264163193499068,
+      "change_%": 21.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.08302075398703868,
+      "without_check": 0.11253961687670805,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.11531853871164686,
+      "without_check": 0.1491794396128167,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.04691453548025884,
+      "without_check": 0.033139741305459554,
+      "change_%": -29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.09106075449730942,
+      "without_check": 0.11779885938891899,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "G&A_to_revenue",
+      "correct": 0.019408353978388172,
+      "without_check": 0.02630918916101797,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "G&A_to_revenue",
+      "correct": 0.02563856824409706,
+      "without_check": 0.033166802891017456,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.14934364344568568,
+      "without_check": 0.20244427578883595,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.23201786145305334,
+      "without_check": 0.13139527408645502,
+      "change_%": -43.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "AssetTurnover",
+      "correct": 1.1584451663368045,
+      "without_check": 0.8545878671977865,
+      "change_%": -26.2
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "AssetTurnover",
+      "correct": 0.4551254194244616,
+      "without_check": 0.3518205889147549,
+      "change_%": -22.7
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "Capex_to_revenue",
+      "correct": 0.030553079216937677,
+      "without_check": 0.04141653338892454,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "Capex_to_revenue",
+      "correct": 0.22912850875324786,
+      "without_check": 0.29640735060474427,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.26788190147563085,
+      "without_check": 0.3631300019869513,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.48331700529596344,
+      "without_check": 0.6252330354764944,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "AAPL",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.23732882225869315,
+      "without_check": 0.32171346859802674,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "MSFT"
+      ],
+      "ticker": "MSFT",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.2541884965427156,
+      "without_check": 0.3288256848717501,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.08302075398703868,
+      "without_check": 0.11253961687670805,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.0989601293516326,
+      "without_check": 0.11114266780270757,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.04691453548025884,
+      "without_check": 0.033139741305459554,
+      "change_%": -29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.026751572833091947,
+      "without_check": 0.030044839189968416,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "G&A_to_revenue",
+      "correct": 0.019408353978388172,
+      "without_check": 0.02630918916101797,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.14934364344568568,
+      "without_check": 0.20244427578883595,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.12571170218472455,
+      "without_check": 0.141187506992676,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "AssetTurnover",
+      "correct": 1.1584451663368045,
+      "without_check": 0.8545878671977865,
+      "change_%": -26.2
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "AssetTurnover",
+      "correct": 1.169317479234057,
+      "without_check": 1.0411465847080223,
+      "change_%": -11.0
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "Capex_to_revenue",
+      "correct": 0.030553079216937677,
+      "without_check": 0.04141653338892454,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.26788190147563085,
+      "without_check": 0.3631300019869513,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.4911147382698453,
+      "without_check": 0.5515736748341122,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "NVDA"
+      ],
+      "ticker": "AAPL",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.23732882225869315,
+      "without_check": 0.32171346859802674,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.08302075398703868,
+      "without_check": 0.11253961687670805,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.1718189929093556,
+      "without_check": 0.13282939773005997,
+      "change_%": -22.7
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.04691453548025884,
+      "without_check": 0.033139741305459554,
+      "change_%": -29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.06591325308748258,
+      "without_check": 0.05108479942917029,
+      "change_%": -22.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "G&A_to_revenue",
+      "correct": 0.019408353978388172,
+      "without_check": 0.02630918916101797,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.14934364344568568,
+      "without_check": 0.20244427578883595,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.2787734593892341,
+      "without_check": 0.39712801302205275,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "AssetTurnover",
+      "correct": 1.1584451663368045,
+      "without_check": 0.8545878671977865,
+      "change_%": -26.2
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "AssetTurnover",
+      "correct": 0.37340728964533704,
+      "without_check": 0.2621221331213616,
+      "change_%": -29.8
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "Capex_to_revenue",
+      "correct": 0.030553079216937677,
+      "without_check": 0.04141653338892454,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "Capex_to_revenue",
+      "correct": 0.009751592655782867,
+      "without_check": 0.013891676143331772,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.26788190147563085,
+      "without_check": 0.3631300019869513,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.4310266564402774,
+      "without_check": 0.6140210047494816,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AAPL",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.23732882225869315,
+      "without_check": 0.32171346859802674,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.4212750637844945,
+      "without_check": 0.6001293286061498,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.08302075398703868,
+      "without_check": 0.11253961687670805,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.16415434038196774,
+      "without_check": 0.21556719669927218,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.04691453548025884,
+      "without_check": 0.033139741305459554,
+      "change_%": -29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.19356091361598474,
+      "without_check": 0.25418385795744286,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "G&A_to_revenue",
+      "correct": 0.019408353978388172,
+      "without_check": 0.02630918916101797,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "G&A_to_revenue",
+      "correct": 0.05281180499170403,
+      "without_check": 0.0693523712391637,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.14934364344568568,
+      "without_check": 0.20244427578883595,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.4418046386839411,
+      "without_check": 0.5801770896110519,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "AssetTurnover",
+      "correct": 1.1584451663368045,
+      "without_check": 0.8545878671977865,
+      "change_%": -26.2
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "AssetTurnover",
+      "correct": 0.4632720314659296,
+      "without_check": 0.352781480239756,
+      "change_%": -23.9
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "Capex_to_revenue",
+      "correct": 0.030553079216937677,
+      "without_check": 0.04141653338892454,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "Capex_to_revenue",
+      "correct": 0.015974158929643097,
+      "without_check": 0.020977237958370035,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.26788190147563085,
+      "without_check": 0.3631300019869513,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.25052070462809334,
+      "without_check": 0.3289833572852441,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "AAPL",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.23732882225869315,
+      "without_check": 0.32171346859802674,
+      "change_%": 35.6
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AAPL",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.23454654569845024,
+      "without_check": 0.30800611932687405,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.11531853871164686,
+      "without_check": 0.1491794396128167,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.0989601293516326,
+      "without_check": 0.11114266780270757,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.09106075449730942,
+      "without_check": 0.11779885938891899,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.026751572833091947,
+      "without_check": 0.030044839189968416,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "G&A_to_revenue",
+      "correct": 0.02563856824409706,
+      "without_check": 0.033166802891017456,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.23201786145305334,
+      "without_check": 0.13139527408645502,
+      "change_%": -43.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.12571170218472455,
+      "without_check": 0.141187506992676,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "AssetTurnover",
+      "correct": 0.4551254194244616,
+      "without_check": 0.3518205889147549,
+      "change_%": -22.7
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "AssetTurnover",
+      "correct": 1.169317479234057,
+      "without_check": 1.0411465847080223,
+      "change_%": -11.0
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "Capex_to_revenue",
+      "correct": 0.22912850875324786,
+      "without_check": 0.29640735060474427,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.48331700529596344,
+      "without_check": 0.6252330354764944,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.4911147382698453,
+      "without_check": 0.5515736748341122,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "NVDA"
+      ],
+      "ticker": "MSFT",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.2541884965427156,
+      "without_check": 0.3288256848717501,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.11531853871164686,
+      "without_check": 0.1491794396128167,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.1718189929093556,
+      "without_check": 0.13282939773005997,
+      "change_%": -22.7
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.09106075449730942,
+      "without_check": 0.11779885938891899,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.06591325308748258,
+      "without_check": 0.05108479942917029,
+      "change_%": -22.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "G&A_to_revenue",
+      "correct": 0.02563856824409706,
+      "without_check": 0.033166802891017456,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.23201786145305334,
+      "without_check": 0.13139527408645502,
+      "change_%": -43.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.2787734593892341,
+      "without_check": 0.39712801302205275,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "AssetTurnover",
+      "correct": 0.4551254194244616,
+      "without_check": 0.3518205889147549,
+      "change_%": -22.7
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "AssetTurnover",
+      "correct": 0.37340728964533704,
+      "without_check": 0.2621221331213616,
+      "change_%": -29.8
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "Capex_to_revenue",
+      "correct": 0.22912850875324786,
+      "without_check": 0.29640735060474427,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "Capex_to_revenue",
+      "correct": 0.009751592655782867,
+      "without_check": 0.013891676143331772,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.48331700529596344,
+      "without_check": 0.6252330354764944,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.4310266564402774,
+      "without_check": 0.6140210047494816,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "MSFT",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.2541884965427156,
+      "without_check": 0.3288256848717501,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.4212750637844945,
+      "without_check": 0.6001293286061498,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.11531853871164686,
+      "without_check": 0.1491794396128167,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.16415434038196774,
+      "without_check": 0.21556719669927218,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.09106075449730942,
+      "without_check": 0.11779885938891899,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.19356091361598474,
+      "without_check": 0.25418385795744286,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "G&A_to_revenue",
+      "correct": 0.02563856824409706,
+      "without_check": 0.033166802891017456,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "G&A_to_revenue",
+      "correct": 0.05281180499170403,
+      "without_check": 0.0693523712391637,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.23201786145305334,
+      "without_check": 0.13139527408645502,
+      "change_%": -43.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.4418046386839411,
+      "without_check": 0.5801770896110519,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "AssetTurnover",
+      "correct": 0.4551254194244616,
+      "without_check": 0.3518205889147549,
+      "change_%": -22.7
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "AssetTurnover",
+      "correct": 0.4632720314659296,
+      "without_check": 0.352781480239756,
+      "change_%": -23.9
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "Capex_to_revenue",
+      "correct": 0.22912850875324786,
+      "without_check": 0.29640735060474427,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "Capex_to_revenue",
+      "correct": 0.015974158929643097,
+      "without_check": 0.020977237958370035,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.48331700529596344,
+      "without_check": 0.6252330354764944,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.25052070462809334,
+      "without_check": 0.3289833572852441,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "MSFT",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.2541884965427156,
+      "without_check": 0.3288256848717501,
+      "change_%": 29.4
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "MSFT",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.23454654569845024,
+      "without_check": 0.30800611932687405,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.0989601293516326,
+      "without_check": 0.11114266780270757,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.1718189929093556,
+      "without_check": 0.13282939773005997,
+      "change_%": -22.7
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.026751572833091947,
+      "without_check": 0.030044839189968416,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.06591325308748258,
+      "without_check": 0.05108479942917029,
+      "change_%": -22.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.12571170218472455,
+      "without_check": 0.141187506992676,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.2787734593892341,
+      "without_check": 0.39712801302205275,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "AssetTurnover",
+      "correct": 1.169317479234057,
+      "without_check": 1.0411465847080223,
+      "change_%": -11.0
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "AssetTurnover",
+      "correct": 0.37340728964533704,
+      "without_check": 0.2621221331213616,
+      "change_%": -29.8
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "Capex_to_revenue",
+      "correct": 0.009751592655782867,
+      "without_check": 0.013891676143331772,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.4911147382698453,
+      "without_check": 0.5515736748341122,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.4310266564402774,
+      "without_check": 0.6140210047494816,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "AVGO"
+      ],
+      "ticker": "AVGO",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.4212750637844945,
+      "without_check": 0.6001293286061498,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.0989601293516326,
+      "without_check": 0.11114266780270757,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.16415434038196774,
+      "without_check": 0.21556719669927218,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.026751572833091947,
+      "without_check": 0.030044839189968416,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.19356091361598474,
+      "without_check": 0.25418385795744286,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "G&A_to_revenue",
+      "correct": 0.05281180499170403,
+      "without_check": 0.0693523712391637,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.12571170218472455,
+      "without_check": 0.141187506992676,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.4418046386839411,
+      "without_check": 0.5801770896110519,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "AssetTurnover",
+      "correct": 1.169317479234057,
+      "without_check": 1.0411465847080223,
+      "change_%": -11.0
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "AssetTurnover",
+      "correct": 0.4632720314659296,
+      "without_check": 0.352781480239756,
+      "change_%": -23.9
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "Capex_to_revenue",
+      "correct": 0.015974158929643097,
+      "without_check": 0.020977237958370035,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "NVDA",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.4911147382698453,
+      "without_check": 0.5515736748341122,
+      "change_%": 12.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.25052070462809334,
+      "without_check": 0.3289833572852441,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "NVDA",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.23454654569845024,
+      "without_check": 0.30800611932687405,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.1718189929093556,
+      "without_check": 0.13282939773005997,
+      "change_%": -22.7
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "R&D_expense_to_revenue",
+      "correct": 0.16415434038196774,
+      "without_check": 0.21556719669927218,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.06591325308748258,
+      "without_check": 0.05108479942917029,
+      "change_%": -22.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "SalesAndMarketing_to_revenue",
+      "correct": 0.19356091361598474,
+      "without_check": 0.25418385795744286,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "G&A_to_revenue",
+      "correct": 0.05281180499170403,
+      "without_check": 0.0693523712391637,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.2787734593892341,
+      "without_check": 0.39712801302205275,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "TotalOperatingExpense_to_revenue",
+      "correct": 0.4418046386839411,
+      "without_check": 0.5801770896110519,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "AssetTurnover",
+      "correct": 0.37340728964533704,
+      "without_check": 0.2621221331213616,
+      "change_%": -29.8
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "AssetTurnover",
+      "correct": 0.4632720314659296,
+      "without_check": 0.352781480239756,
+      "change_%": -23.9
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "Capex_to_revenue",
+      "correct": 0.009751592655782867,
+      "without_check": 0.013891676143331772,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "Capex_to_revenue",
+      "correct": 0.015974158929643097,
+      "without_check": 0.020977237958370035,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.4310266564402774,
+      "without_check": 0.6140210047494816,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "OperatingCashFlow_to_revenue",
+      "correct": 0.25052070462809334,
+      "without_check": 0.3289833572852441,
+      "change_%": 31.3
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "AVGO",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.4212750637844945,
+      "without_check": 0.6001293286061498,
+      "change_%": 42.5
+    },
+    {
+      "category": "Operating efficiency",
+      "pair": [
+        "AVGO",
+        "CSCO"
+      ],
+      "ticker": "CSCO",
+      "metric": "FreeCashFlowMargin",
+      "correct": 0.23454654569845024,
+      "without_check": 0.30800611932687405,
+      "change_%": 31.3
+    }
+  ],
+  "flips": [
+    {
+      "category": "Profitability",
+      "pair": [
+        "MSFT",
+        "AVGO"
+      ],
+      "correct_winner": "MSFT",
+      "without_check": "AVGO"
+    }
+  ]
+}

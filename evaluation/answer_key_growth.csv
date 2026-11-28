@@ -1,0 +1,21 @@
+ticker,metric,fiscal_year,value_in_10k,unit,page_in_10k,row_label_in_10k,filing,filled_by
+AAPL,Revenue_total,2021,"365,817",USD millions,29,Total net sales,10-K FY2021 (0000320193-21-000105),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+AAPL,NetIncomeLoss,2021,"94,680",USD millions,29,Net income,10-K FY2021 (0000320193-21-000105),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+MSFT,Revenue_total,2021,"168,088",USD millions,57,Total revenue,10-K FY2021 (0001564590-21-039151),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+MSFT,NetIncomeLoss,2021,"61,271",USD millions,57,Net income,10-K FY2021 (0001564590-21-039151),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+NVDA,Revenue_total,2021,"16,675",USD millions,47,Revenue,10-K FY2021 (0001045810-21-000010),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+NVDA,NetIncomeLoss,2021,"4,332",USD millions,47,Net income,10-K FY2021 (0001045810-21-000010),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+AVGO,Revenue_total,2021,"27,450",USD millions,52,Total net revenue,10-K FY2021 (0001730168-21-000153),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+AVGO,NetIncomeLoss,2021,"6,736",USD millions,52,Net income,10-K FY2021 (0001730168-21-000153),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+CSCO,Revenue_total,2021,"49,818",USD millions,57,Total revenue,10-K FY2021 (0000858877-21-000013),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+CSCO,NetIncomeLoss,2021,"10,591",USD millions,57,NET INCOME,10-K FY2021 (0000858877-21-000013),AI-read (Claude Opus 5.5) from the 10-K on SEC EDGAR; not from our data
+AAPL,Revenue_total,2025,"416,161",USD millions,29,Total net sales,10-K FY2025,same as answer_key_values.csv
+AAPL,NetIncomeLoss,2025,"112,010",USD millions,29,Net income,10-K FY2025,same as answer_key_values.csv
+MSFT,Revenue_total,2025,"281,724",USD millions,50,Total revenue,10-K FY2025,same as answer_key_values.csv
+MSFT,NetIncomeLoss,2025,"101,832",USD millions,50,Net income,10-K FY2025,same as answer_key_values.csv
+NVDA,Revenue_total,2025,"130,497",USD millions,52,Revenue,10-K FY2025,same as answer_key_values.csv
+NVDA,NetIncomeLoss,2025,"72,880",USD millions,52,Net income,10-K FY2025,same as answer_key_values.csv
+AVGO,Revenue_total,2025,"63,887",USD millions,48,Total net revenue,10-K FY2025,same as answer_key_values.csv
+AVGO,NetIncomeLoss,2025,"23,126",USD millions,48,Net income,10-K FY2025,same as answer_key_values.csv
+CSCO,Revenue_total,2025,"56,654",USD millions,57,Total revenue,10-K FY2025,same as answer_key_values.csv
+CSCO,NetIncomeLoss,2025,"10,180",USD millions,57,NET INCOME,10-K FY2025,same as answer_key_values.csv

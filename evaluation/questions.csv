@@ -1,0 +1,74 @@
+question_id,set,category,companies,question
+Q01,main,Scale,AAPL|MSFT,"Which is bigger in scale, Apple or Microsoft?"
+Q02,main,Scale,AAPL|NVDA,"Which is bigger in scale, Apple or Nvidia?"
+Q03,main,Scale,AAPL|AVGO,"Which is bigger in scale, Apple or Broadcom?"
+Q04,main,Scale,AAPL|CSCO,"Which is bigger in scale, Apple or Cisco?"
+Q05,main,Scale,MSFT|NVDA,"Which is bigger in scale, Microsoft or Nvidia?"
+Q06,main,Scale,MSFT|AVGO,"Which is bigger in scale, Microsoft or Broadcom?"
+Q07,main,Scale,MSFT|CSCO,"Which is bigger in scale, Microsoft or Cisco?"
+Q08,main,Scale,NVDA|AVGO,"Which is bigger in scale, Nvidia or Broadcom?"
+Q09,main,Scale,NVDA|CSCO,"Which is bigger in scale, Nvidia or Cisco?"
+Q10,main,Scale,AVGO|CSCO,"Which is bigger in scale, Broadcom or Cisco?"
+Q11,main,Profitability,AAPL|MSFT,Is Apple or Microsoft more profitable?
+Q12,main,Profitability,AAPL|NVDA,Is Apple or Nvidia more profitable?
+Q13,main,Profitability,AAPL|AVGO,Is Apple or Broadcom more profitable?
+Q14,main,Profitability,AAPL|CSCO,Is Apple or Cisco more profitable?
+Q15,main,Profitability,MSFT|NVDA,Is Microsoft or Nvidia more profitable?
+Q16,main,Profitability,MSFT|AVGO,Is Microsoft or Broadcom more profitable?
+Q17,main,Profitability,MSFT|CSCO,Is Microsoft or Cisco more profitable?
+Q18,main,Profitability,NVDA|AVGO,Is Nvidia or Broadcom more profitable?
+Q19,main,Profitability,NVDA|CSCO,Is Nvidia or Cisco more profitable?
+Q20,main,Profitability,AVGO|CSCO,Is Broadcom or Cisco more profitable?
+Q21,main,Operating efficiency,AAPL|MSFT,How does the operating efficiency of Apple and Microsoft compare?
+Q22,main,Operating efficiency,AAPL|NVDA,How does the operating efficiency of Apple and Nvidia compare?
+Q23,main,Operating efficiency,AAPL|AVGO,How does the operating efficiency of Apple and Broadcom compare?
+Q24,main,Operating efficiency,AAPL|CSCO,How does the operating efficiency of Apple and Cisco compare?
+Q25,main,Operating efficiency,MSFT|NVDA,How does the operating efficiency of Microsoft and Nvidia compare?
+Q26,main,Operating efficiency,MSFT|AVGO,How does the operating efficiency of Microsoft and Broadcom compare?
+Q27,main,Operating efficiency,MSFT|CSCO,How does the operating efficiency of Microsoft and Cisco compare?
+Q28,main,Operating efficiency,NVDA|AVGO,How does the operating efficiency of Nvidia and Broadcom compare?
+Q29,main,Operating efficiency,NVDA|CSCO,How does the operating efficiency of Nvidia and Cisco compare?
+Q30,main,Operating efficiency,AVGO|CSCO,How does the operating efficiency of Broadcom and Cisco compare?
+Q31,main,Scale,AAPL|MSFT|NVDA|AVGO|CSCO,Which company has the largest scale in the IT sector?
+Q32,main,Profitability,AAPL|MSFT|NVDA|AVGO|CSCO,Which company is the most profitable in the IT sector?
+Q33,main,Operating efficiency,AAPL|MSFT|NVDA|AVGO|CSCO,How do the five IT companies compare on operating efficiency?
+P01,everyday_wording,Scale,AAPL|MSFT,Is Apple or Microsoft bigger?
+P02,everyday_wording,Scale,NVDA|CSCO,"Who is the larger company, Nvidia or Cisco?"
+P03,everyday_wording,Profitability,AAPL|MSFT,"Which makes more money for each dollar of sales, Apple or Microsoft?"
+P04,everyday_wording,Profitability,NVDA|AVGO,Does Nvidia earn better margins than Broadcom?
+P05,everyday_wording,Operating efficiency,MSFT|CSCO,"Which spends more of its sales on running the business, Microsoft or Cisco?"
+P06,everyday_wording,Operating efficiency,AAPL|NVDA,"Which runs leaner, Apple or Nvidia?"
+N01,blind_everyday,Scale,AAPL|MSFT,"ok so for my econ class, whos bigger apple or microsoft? like in total sales"
+N02,blind_everyday,Profitability,NVDA|CSCO,does nvidia keep more of its revenue as profit than cisco or nah
+N03,blind_everyday,Operating efficiency,MSFT|AVGO,how much of microsofts revenue goes to R&D vs broadcom? need it for a paper due friday
+N04,blind_everyday,Scale,NVDA|AVGO,is nvidia actualy bigger than broadcom in profit dollars or is that just hype
+N05,blind_everyday,Profitability,AAPL|AVGO,"which has better margins, apple or broadcom? explain like im 19 lol"
+N06,blind_everyday,Operating efficiency,AAPL|CSCO,does cisco spend more on marketing and admin stuff than apple as a % of sales?
+N07,blind_everyday,Profitability,MSFT|NVDA,"NVDA vs MSFT net margin and ROE, who's ahead?"
+N08,blind_everyday,Scale,AVGO|CSCO,AVGO or CSCO bigger by total assets?
+N09,blind_everyday,Operating efficiency,NVDA|CSCO,"R&D as % of revenue, NVDA vs CSCO. Who's reinvesting more?"
+N10,blind_everyday,Profitability,AAPL|CSCO,Apple vs Cisco operating margin - which one actually turns more of its sales into profit?
+N11,blind_everyday,Scale,MSFT|NVDA,Is Nvidia's net income bigger than MSFT's now?
+N12,blind_everyday,Operating efficiency,AAPL|AVGO,SG&A to revenue for Apple vs Broadcom - who runs leaner?
+N13,blind_everyday,Scale,AAPL|NVDA,For an article I'm writing: how do Apple and Nvidia compare in annual revenue and total assets?
+N14,blind_everyday,Profitability,MSFT|AVGO,"Could you compare the profitability of Microsoft and Broadcom, specifically their gross and operating margins?"
+N15,blind_everyday,Operating efficiency,MSFT|NVDA,What share of revenue do Microsoft and Nvidia each devote to research and development?
+N16,blind_everyday,Scale,MSFT|CSCO,How much larger is Microsoft than Cisco when measured by revenue and net income?
+N17,blind_everyday,Profitability,NVDA|AVGO,"Which company earns a higher return on assets, Nvidia or Broadcom?"
+N18,blind_everyday,Operating efficiency,AAPL|MSFT,"How do Apple and Microsoft differ in sales, general and administrative spending relative to revenue?"
+N19,blind_everyday,Scale,AAPL|AVGO,My grandson just got a job at Broadcom. Is it a bigger company than Apple?
+N20,blind_everyday,Profitability,AAPL|NVDA,"which one makes more money out of every dollar it sells, apple or that nvidia chip company"
+N21,blind_everyday,Operating efficiency,NVDA|AVGO,Do Nvidia and Broadcom spend a lot on inventing new things? Which one spends more compared to what they sell?
+N22,blind_everyday,Scale,NVDA|CSCO,is cisco still bigger than nvidia? cisco was the big one back in 2000 when my husband bought it
+N23,blind_everyday,Profitability,MSFT|CSCO,"Microsoft or Cisco, which is more profitable? Please keep it simple, I don't know any of the terms"
+N24,blind_everyday,Operating efficiency,AVGO|CSCO,"how much do broadcom and cisco spend on advertising and offices and all that, compared to what they bring in"
+G01,growth,Growth,AAPL|MSFT,"Which grew revenue faster from fiscal 2021 to fiscal 2025, Apple or Microsoft?"
+G02,growth,Growth,NVDA|AVGO,"Which grew revenue faster from fiscal 2021 to fiscal 2025, Nvidia or Broadcom?"
+G03,growth,Growth,CSCO|AAPL,"Which grew revenue faster from fiscal 2021 to fiscal 2025, Cisco or Apple?"
+G04,growth,Growth,MSFT|NVDA,"Which grew revenue faster from fiscal 2021 to fiscal 2025, Microsoft or Nvidia?"
+G05,growth,Growth,AVGO|CSCO,"Which grew revenue faster from fiscal 2021 to fiscal 2025, Broadcom or Cisco?"
+G06,growth,Growth,AAPL|NVDA,"Which grew net income faster from fiscal 2021 to fiscal 2025, Apple or Nvidia?"
+G07,growth,Growth,MSFT|CSCO,"Which grew net income faster from fiscal 2021 to fiscal 2025, Microsoft or Cisco?"
+G08,growth,Growth,AVGO|AAPL,"Which grew net income faster from fiscal 2021 to fiscal 2025, Broadcom or Apple?"
+G09,growth,Growth,NVDA|CSCO,"Which grew net income faster from fiscal 2021 to fiscal 2025, Nvidia or Cisco?"
+G10,growth,Growth,MSFT|AVGO,"Which grew net income faster from fiscal 2021 to fiscal 2025, Microsoft or Broadcom?"

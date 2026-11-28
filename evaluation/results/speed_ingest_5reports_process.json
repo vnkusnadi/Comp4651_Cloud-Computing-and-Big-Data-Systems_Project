@@ -1,0 +1,84 @@
+[
+  {
+    "workers": 1,
+    "mode": "process",
+    "reports": 5,
+    "succeeded": 5,
+    "total_seconds": 15.1,
+    "seconds_per_report_median": 2.59,
+    "saved_numbers": 829,
+    "per_report": [
+      {
+        "ticker": "AAPL",
+        "year": 2025,
+        "units": 172,
+        "seconds": 1.95
+      },
+      {
+        "ticker": "AVGO",
+        "year": 2025,
+        "units": 137,
+        "seconds": 2.59
+      },
+      {
+        "ticker": "CSCO",
+        "year": 2025,
+        "units": 191,
+        "seconds": 3.49
+      },
+      {
+        "ticker": "MSFT",
+        "year": 2025,
+        "units": 185,
+        "seconds": 5.44
+      },
+      {
+        "ticker": "NVDA",
+        "year": 2025,
+        "units": 144,
+        "seconds": 1.61
+      }
+    ]
+  },
+  {
+    "workers": 4,
+    "mode": "process",
+    "reports": 5,
+    "succeeded": 5,
+    "total_seconds": 6.42,
+    "seconds_per_report_median": 3.15,
+    "saved_numbers": 829,
+    "per_report": [
+      {
+        "ticker": "AAPL",
+        "year": 2025,
+        "units": 172,
+        "seconds": 1.94
+      },
+      {
+        "ticker": "AVGO",
+        "year": 2025,
+        "units": 137,
+        "seconds": 3.15
+      },
+      {
+        "ticker": "CSCO",
+        "year": 2025,
+        "units": 191,
+        "seconds": 3.21
+      },
+      {
+        "ticker": "MSFT",
+        "year": 2025,
+        "units": 185,
+        "seconds": 6.39
+      },
+      {
+        "ticker": "NVDA",
+        "year": 2025,
+        "units": 144,
+        "seconds": 2.43
+      }
+    ]
+  }
+]

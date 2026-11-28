@@ -1,0 +1,221 @@
+{
+  "num_units": 862,
+  "engine_build_s": 0.897,
+  "index_stats": {
+    "num_units": 862,
+    "bm25": {
+      "build_time_s": 0.0119,
+      "index_size_bytes": 398112
+    },
+    "dense": {
+      "backend": "tfidf-char-ngram",
+      "build_time_s": 0.8374,
+      "index_size_bytes": 2894348
+    },
+    "alignment_edges_source": "computed_on_demand"
+  },
+  "packet_ms_median": 53.7,
+  "answer_ms_median": 53.9,
+  "answer_ms_max": 145.8,
+  "note": "verdict step is code-only here; with Claude add the API call time",
+  "per_question": [
+    {
+      "question_id": "Q01",
+      "packet": 41.41,
+      "verdict": 0.21,
+      "total": 41.65
+    },
+    {
+      "question_id": "Q02",
+      "packet": 34.06,
+      "verdict": 0.17,
+      "total": 34.26
+    },
+    {
+      "question_id": "Q03",
+      "packet": 34.48,
+      "verdict": 0.17,
+      "total": 34.66
+    },
+    {
+      "question_id": "Q04",
+      "packet": 34.88,
+      "verdict": 0.18,
+      "total": 35.08
+    },
+    {
+      "question_id": "Q05",
+      "packet": 35.16,
+      "verdict": 0.18,
+      "total": 35.36
+    },
+    {
+      "question_id": "Q06",
+      "packet": 35.49,
+      "verdict": 0.19,
+      "total": 35.7
+    },
+    {
+      "question_id": "Q07",
+      "packet": 35.05,
+      "verdict": 0.18,
+      "total": 35.25
+    },
+    {
+      "question_id": "Q08",
+      "packet": 34.47,
+      "verdict": 0.18,
+      "total": 34.67
+    },
+    {
+      "question_id": "Q09",
+      "packet": 34.52,
+      "verdict": 0.17,
+      "total": 34.71
+    },
+    {
+      "question_id": "Q10",
+      "packet": 34.15,
+      "verdict": 0.17,
+      "total": 34.34
+    },
+    {
+      "question_id": "Q11",
+      "packet": 58.0,
+      "verdict": 0.19,
+      "total": 58.21
+    },
+    {
+      "question_id": "Q12",
+      "packet": 60.05,
+      "verdict": 0.2,
+      "total": 60.27
+    },
+    {
+      "question_id": "Q13",
+      "packet": 55.61,
+      "verdict": 0.17,
+      "total": 55.8
+    },
+    {
+      "question_id": "Q14",
+      "packet": 61.59,
+      "verdict": 0.21,
+      "total": 61.83
+    },
+    {
+      "question_id": "Q15",
+      "packet": 58.52,
+      "verdict": 0.17,
+      "total": 58.71
+    },
+    {
+      "question_id": "Q16",
+      "packet": 53.33,
+      "verdict": 0.16,
+      "total": 53.51
+    },
+    {
+      "question_id": "Q17",
+      "packet": 58.29,
+      "verdict": 0.19,
+      "total": 58.5
+    },
+    {
+      "question_id": "Q18",
+      "packet": 57.15,
+      "verdict": 0.17,
+      "total": 57.34
+    },
+    {
+      "question_id": "Q19",
+      "packet": 61.86,
+      "verdict": 0.19,
+      "total": 62.07
+    },
+    {
+      "question_id": "Q20",
+      "packet": 56.55,
+      "verdict": 0.17,
+      "total": 56.74
+    },
+    {
+      "question_id": "Q21",
+      "packet": 54.49,
+      "verdict": 0.16,
+      "total": 54.67
+    },
+    {
+      "question_id": "Q22",
+      "packet": 48.47,
+      "verdict": 0.13,
+      "total": 48.61
+    },
+    {
+      "question_id": "Q23",
+      "packet": 51.72,
+      "verdict": 0.15,
+      "total": 51.89
+    },
+    {
+      "question_id": "Q24",
+      "packet": 53.71,
+      "verdict": 0.16,
+      "total": 53.89
+    },
+    {
+      "question_id": "Q25",
+      "packet": 49.41,
+      "verdict": 0.16,
+      "total": 49.59
+    },
+    {
+      "question_id": "Q26",
+      "packet": 52.25,
+      "verdict": 0.15,
+      "total": 52.42
+    },
+    {
+      "question_id": "Q27",
+      "packet": 54.03,
+      "verdict": 0.19,
+      "total": 54.24
+    },
+    {
+      "question_id": "Q28",
+      "packet": 47.35,
+      "verdict": 0.14,
+      "total": 47.51
+    },
+    {
+      "question_id": "Q29",
+      "packet": 58.42,
+      "verdict": 0.14,
+      "total": 58.58
+    },
+    {
+      "question_id": "Q30",
+      "packet": 54.58,
+      "verdict": 0.15,
+      "total": 54.75
+    },
+    {
+      "question_id": "Q31",
+      "packet": 90.49,
+      "verdict": 0.52,
+      "total": 91.03
+    },
+    {
+      "question_id": "Q32",
+      "packet": 145.26,
+      "verdict": 0.56,
+      "total": 145.84
+    },
+    {
+      "question_id": "Q33",
+      "packet": 130.27,
+      "verdict": 0.4,
+      "total": 130.69
+    }
+  ]
+}
