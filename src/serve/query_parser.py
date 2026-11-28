@@ -29,6 +29,8 @@ METRIC_SYNONYMS = {
     "TotalOperatingExpense_to_revenue": ["opex to revenue", "operating expense ratio"],
     "Capex_to_revenue": ["capex intensity", "capex to revenue", "capital intensity"],
     "OperatingCashFlow_to_revenue": ["operating cash flow margin", "ocf margin"],
+    "FreeCashFlowMargin": ["free cash flow margin", "fcf margin", "free cash flow"],
+    "EBITDA_margin": ["ebitda margin"],
     "GrossMargin": ["gross margin"],
     "OperatingMargin": ["operating margin"],
     "NetMargin": ["net margin", "profit margin"],
@@ -42,10 +44,18 @@ METRIC_SYNONYMS = {
 }
 
 CATEGORY_KEYWORDS = {
-    "Scale": ["scale", "largest", "biggest", "size"],
-    "Profitability": ["profitab", "profitable"],
-    "Operating efficiency": ["operating efficiency", "operating profile", "efficien"],
+    "Scale": ["scale", "largest", "biggest", "size", "bigger", "larger", "large company"],
+    "Profitability": ["profitab", "profitable", "margins", "more money", "earns more", "earn more",
+                      "earn better", "for each dollar of sales", "per dollar of sales"],
+    "Operating efficiency": ["operating efficiency", "operating profile", "efficien",
+                             "running the business", "runs leaner", "leaner"],
 }
+
+# Everyday words that also match a metric keyword ("sales" -> Revenue_total).
+# When ONLY these weak hits are found and a category phrase is present, the
+# question is read as a category question ("Which makes more money for each
+# dollar of sales?"), not as a single-metric lookup.
+WEAK_METRIC_WORDS = {"sales", "earnings", "assets", "revenue"}
 
 
 @dataclass
@@ -112,15 +122,21 @@ class QueryParser:
         # Specific metrics: longest keyword first, consume matched span so
         # "operating margin" is not also read as "operating income".
         metrics: List[str] = []
+        hit_words: List[str] = []
         remaining = q
         for kw_text, name in self.keywords:
             pat = _kw_pattern(kw_text)
             if pat.search(remaining):
                 if name not in metrics:
                     metrics.append(name)
+                hit_words.append(kw_text)
                 remaining = pat.sub(" ", remaining)
 
         category: Optional[str] = None
+        if metrics and all(w in WEAK_METRIC_WORDS for w in hit_words) and any(
+                k in q for kws in CATEGORY_KEYWORDS.values() for k in kws if len(k) > 5):
+            notes.append(f"only everyday metric words {hit_words}: reading as a category question")
+            metrics = []
         if not metrics:
             for cat, kws in CATEGORY_KEYWORDS.items():
                 if any(k in q for k in kws):

@@ -541,6 +541,15 @@ categories:
       - DeferredRevenue
       - AccountsReceivable
       - Inventory
+    # Person D: the verdict (who wins, stability) is scored on these only.
+    # Per-share numbers depend on share count, and receivables / inventory /
+    # deferred revenue are working-capital items, so they are shown but not scored.
+    score_members:
+      - Revenue_total
+      - GrossProfit
+      - OperatingIncomeLoss
+      - NetIncomeLoss
+      - Assets
   - name: Profitability
     direction: higher_is_better      # stated convention, per refined plan
     default_weight: equal
@@ -557,6 +566,15 @@ categories:
       - ReturnOnAssets
       - ReturnOnEquity
       - EBITDA
+      - EBITDA_margin
+    # Person D: profitability is scored on ratios only. Dollar amounts and EPS
+    # measure size, so with them a bigger company "wins" profitability.
+    score_members:
+      - GrossMargin
+      - OperatingMargin
+      - NetMargin
+      - ReturnOnAssets
+      - ReturnOnEquity
       - EBITDA_margin
   - name: Operating efficiency
     direction: profile_comparison    # no "best company" ranking; R&D intensity is descriptive

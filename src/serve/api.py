@@ -7,6 +7,8 @@ POST /query            -> conclusion + structured claims (each with evidence_uni
                           evidence rows with source pointers, alignment diagnostics
 GET  /evidence/{id}    -> one evidence unit (click-through target for the UI)
 GET  /health           -> index stats (build_time, index_size, num_units)
+POST /category         -> category question: fact sheet (code), AI verdict, 7-check gate
+                          (code-only verdict when no Claude key is set or the checks fail)
 """
 
 from __future__ import annotations
@@ -76,3 +78,10 @@ def evidence(unit_id: str) -> Dict[str, Any]:
     if u is None:
         raise HTTPException(status_code=404, detail=f"unknown unit_id {unit_id}")
     return {**u, "has_dimension": has_dimension(u), "source": edgar_urls(u)}
+
+
+@app.post("/category")
+def category(req: QueryRequest) -> Dict[str, Any]:
+    """Stage 5b/5c: the verdict for 'which company is biggest / most profitable / ...'."""
+    from src.analysis.category import answer as category_answer
+    return category_answer(req.query, engine=get_engine())
